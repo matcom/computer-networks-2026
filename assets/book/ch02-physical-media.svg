@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+<title id="t">Physical media and signals</title><desc id="d">Fiber, twisted pair, coaxial cable, and wireless media carry physical signals with different representations.</desc>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M70 545H1130" stroke="#d9e0e4" stroke-width="2"/>
+  <g transform="translate(75 165)">
+    <rect width="250" height="340" rx="28" fill="#f8fbfc" stroke="#d9e0e4"/>
+    <path d="M38 232h70" stroke="#102a3a" stroke-width="34"/>
+    <path d="M95 232c38-45 62-45 100 0s62 45 100 0" stroke="#2f8ee5" stroke-width="8"/>
+    <g stroke="#63c5ef" stroke-width="6"><path d="M95 215l130-78"/><path d="M95 225l145-28"/><path d="M95 239l145 30"/><path d="M95 249l130 78"/></g>
+    <path d="M40 86h38v58h38V86h38v58h38V86h38" stroke="#2f8ee5" stroke-width="7"/>
+    <circle cx="40" cy="86" r="6" fill="#2f8ee5" stroke="none"/>
+  </g>
+  <g transform="translate(350 165)">
+    <rect width="250" height="340" rx="28" fill="#f8fbfc" stroke="#d9e0e4"/>
+    <path d="M38 232c35-28 55 28 90 0s55 28 90 0" stroke="#2f8ee5" stroke-width="13"/><path d="M38 260c35 28 55-28 90 0s55-28 90 0" stroke="#52b98b" stroke-width="13"/>
+    <path d="M30 112c25-35 45-35 70 0s45 35 70 0s45-35 70 0" stroke="#52b98b" stroke-width="7"/>
+    <path d="M30 130c25 35 45 35 70 0s45-35 70 0s45 35 70 0" stroke="#2f8ee5" stroke-width="7"/>
+  </g>
+  <g transform="translate(625 165)">
+    <rect width="250" height="340" rx="28" fill="#f8fbfc" stroke="#d9e0e4"/>
+    <path d="M38 246h72" stroke="#102a3a" stroke-width="44"/><path d="M105 246h56" stroke="#bcc7ce" stroke-width="34"/><path d="M155 246h58" stroke="#f7f9fa" stroke-width="24"/><path d="M205 246h32" stroke="#d98732" stroke-width="10"/>
+    <path d="M28 122c25-48 50 48 75 0s50 48 75 0s50 48 75 0" stroke="#f0a23c" stroke-width="7"/>
+  </g>
+  <g transform="translate(900 165)">
+    <rect width="225" height="340" rx="28" fill="#f8fbfc" stroke="#d9e0e4"/>
+    <rect x="48" y="245" width="130" height="62" rx="18" fill="#eef3f5" stroke="#b8c8d0" stroke-width="3"/>
+    <path d="M65 245v-68M162 245v-68" stroke="#102a3a" stroke-width="10"/>
+    <path d="M83 203c20-28 42-28 62 0M99 220c11-15 21-15 31 0" stroke="#8d6bdc" stroke-width="7"/>
+    <path d="M45 118c30-48 60-48 90 0M66 140c16-27 32-27 48 0" stroke="#8d6bdc" stroke-width="7"/>
+  </g>
+</g></svg>

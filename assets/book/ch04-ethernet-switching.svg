@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+<title id="t">Ethernet switch learning</title><desc id="d">Four hosts connect to a learning switch. Frames move from host A to B while the switch learns source MAC to port mappings.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L9 3 0 6Z" fill="#0a6074"/></marker></defs>
+<g font-family="ui-sans-serif,system-ui,sans-serif" text-anchor="middle">
+  <g stroke="#8eb7c3" stroke-width="8" fill="none"><path d="M260 215L495 315M940 215L705 315M260 500L495 370M940 500L705 370"/></g>
+  <rect x="465" y="275" width="270" height="135" rx="24" fill="#102a3a"/>
+  <g fill="#f5f7f8"><rect x="495" y="320" width="42" height="34" rx="5"/><rect x="552" y="320" width="42" height="34" rx="5"/><rect x="609" y="320" width="42" height="34" rx="5"/><rect x="666" y="320" width="42" height="34" rx="5"/></g>
+  <g fill="#52b98b"><circle cx="516" cy="375" r="6"/><circle cx="573" cy="375" r="6"/><circle cx="630" cy="375" r="6"/></g>
+  <g fill="#f8fbfc" stroke="#b8c8d0" stroke-width="3"><rect x="110" y="145" width="210" height="125" rx="22"/><rect x="880" y="145" width="210" height="125" rx="22"/><rect x="110" y="430" width="210" height="125" rx="22"/><rect x="880" y="430" width="210" height="125" rx="22"/></g>
+  <g fill="#102a3a" font-size="30" font-weight="700"><text x="215" y="218">A</text><text x="985" y="218">B</text><text x="215" y="503">C</text><text x="985" y="503">D</text></g>
+  <g><rect x="500" y="92" width="200" height="125" rx="18" fill="#f8fbfc" stroke="#d9e0e4"/><text x="600" y="126" font-size="19" fill="#60717f">MAC</text><text x="600" y="158" font-size="20" font-weight="700" fill="#102a3a">A → 1</text><text x="600" y="190" font-size="20" font-weight="700" fill="#102a3a">B → 2</text></g>
+  <g fill="#3c8dde"><rect x="320" y="240" width="30" height="30" rx="6"/><rect x="365" y="258" width="30" height="30" rx="6"/></g>
+  <g fill="#52b98b"><rect x="805" y="258" width="30" height="30" rx="6"/><rect x="850" y="240" width="30" height="30" rx="6"/></g>
+  <path d="M350 255C440 255 455 310 492 330" stroke="#0a6074" stroke-width="5" fill="none" marker-end="url(#a)"/><path d="M708 330C760 315 785 270 850 255" stroke="#0a6074" stroke-width="5" fill="none" marker-end="url(#a)"/>
+</g></svg>

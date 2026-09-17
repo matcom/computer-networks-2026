@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+<title id="t">Internet architecture path</title><desc id="d">A client crosses host, local network, routers, remote host, and server while protocol responsibilities remain layered.</desc>
+<defs><filter id="s"><feDropShadow dy="6" stdDeviation="8" flood-opacity=".12"/></filter></defs>
+<g font-family="ui-sans-serif,system-ui,sans-serif" text-anchor="middle">
+  <g fill="none" stroke="#8eb7c3" stroke-width="8" stroke-linecap="round"><path d="M140 360H1060"/><path d="M600 360V235"/></g>
+  <g filter="url(#s)">
+    <rect x="70" y="285" width="160" height="150" rx="24" fill="#f5f7f8" stroke="#b8c8d0" stroke-width="3"/>
+    <rect x="970" y="285" width="160" height="150" rx="24" fill="#f5f7f8" stroke="#b8c8d0" stroke-width="3"/>
+    <rect x="270" y="305" width="150" height="110" rx="55" fill="#dceff4" stroke="#79b8c8" stroke-width="3"/>
+    <rect x="780" y="305" width="150" height="110" rx="55" fill="#dceff4" stroke="#79b8c8" stroke-width="3"/>
+    <circle cx="530" cy="360" r="58" fill="#102a3a"/><circle cx="670" cy="360" r="58" fill="#102a3a"/>
+    <circle cx="600" cy="205" r="72" fill="#edf7f8" stroke="#79b8c8" stroke-width="3"/>
+  </g>
+  <g fill="#102a3a" font-size="26" font-weight="700"><text x="150" y="330">APP</text><text x="1050" y="330">APP</text><text x="345" y="350">LAN</text><text x="855" y="350">LAN</text><text x="600" y="214">IP</text></g>
+  <g fill="#fff" font-size="24" font-weight="700"><text x="530" y="369">IP</text><text x="670" y="369">IP</text></g>
+  <g stroke="#0a6074" stroke-width="5" fill="none"><path d="M105 395h90"/><path d="M1005 395h90"/><path d="M505 335l50 50M555 335l-50 50M645 335l50 50M695 335l-50 50"/></g>
+  <g transform="translate(350 530)"><rect x="0" y="0" width="500" height="62" rx="18" fill="#eef3f5" stroke="#d0dde2"/><rect x="18" y="14" width="90" height="34" rx="10" fill="#3c8dde"/><rect x="118" y="14" width="90" height="34" rx="10" fill="#52b98b"/><rect x="218" y="14" width="90" height="34" rx="10" fill="#f0a23c"/><rect x="318" y="14" width="72" height="34" rx="10" fill="#8d6bdc"/><rect x="400" y="14" width="82" height="34" rx="10" fill="#7b91a0"/></g>
+  <g fill="#60717f" font-size="18"><text x="395" y="620">APP</text><text x="495" y="620">TCP/UDP</text><text x="595" y="620">IP</text><text x="705" y="620">LAN</text><text x="790" y="620">PHY</text></g>
+</g></svg>

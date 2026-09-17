@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+<title id="t">Networking learning path</title><desc id="d">A staircase from physical media through Ethernet, IP, transport, applications, and measurement to professional mastery.</desc>
+<g font-family="ui-sans-serif,system-ui,sans-serif" text-anchor="middle">
+  <path d="M95 535C230 500 270 450 365 420S520 340 610 330 755 245 845 235 970 155 1080 125" stroke="#b7dbe3" stroke-width="28" fill="none" stroke-linecap="round"/>
+  <g fill="#f8fbfc" stroke="#b8c8d0" stroke-width="3">
+    <circle cx="115" cy="530" r="58"/><circle cx="300" cy="450" r="58"/><circle cx="485" cy="365" r="58"/><circle cx="670" cy="285" r="58"/><circle cx="855" cy="205" r="58"/><circle cx="1035" cy="130" r="58"/>
+  </g>
+  <g fill="#102a3a" font-size="23" font-weight="800"><text x="115" y="538">PHY</text><text x="300" y="458">ETH</text><text x="485" y="373">IP</text><text x="670" y="293">TCP</text><text x="855" y="213">APP</text><text x="1035" y="138">OBS</text></g>
+  <g stroke="#0a6074" stroke-width="7" fill="none" stroke-linecap="round"><path d="M70 605h90"/><path d="M255 525h90"/><path d="M440 440h90"/><path d="M625 360h90"/><path d="M810 280h90"/></g>
+  <g transform="translate(1015 35)"><path d="M0 0v-55" stroke="#0a6074" stroke-width="8"/><path d="M0-55l72 17-72 22Z" fill="#3c8dde"/></g>
+</g></svg>
