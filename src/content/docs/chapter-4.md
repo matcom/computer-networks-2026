@@ -4,7 +4,7 @@ description: 'Reason about Ethernet frames, MAC learning, flooding, forwarding, 
 pagination: false
 ---
 
-<p class="cn-course-kicker">Part I · Chapter 4</p>
+<p class="cn-book-part">Part I · Chapter 4</p>
 <p class="cn-guiding-question">How does a host deliver a packet to another machine on the same local network?</p>
 <figure class="cn-network-figure">
   <div class="cn-network-path cn-path-4">
@@ -493,5 +493,3 @@ Using code, a table, cards on paper, or another reproducible method, demonstrate
 On a real/local interface, inspect `ip link` and `ip neigh`. If authorized packet capture is available, observe one ARP request/reply and identify Ethernet source/destination addresses separately from sender/target protocol addresses inside ARP.
 
 Finish with two explanations: one sequence where the switch table changes but the host ARP cache does not, and one where ARP state changes without changing the physical switch topology.
-
-<div class="cn-end-note"><span>Part I publication boundary</span><strong>Continue only through Chapter 4. Later book parts are intentionally not published here yet.</strong></div>

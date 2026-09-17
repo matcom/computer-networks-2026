@@ -4,7 +4,7 @@ description: 'Siga un intercambio de Internet a través de los límites del sist
 pagination: false
 ---
 
-<p class="cn-course-kicker">Capítulo 1</p>
+<p class="cn-book-part">Capítulo 1</p>
 <p class="cn-guiding-question">¿Qué ocurre, en cada límite relevante del sistema, cuando un programa se comunica con otro a través de una red?</p>
 <figure class="cn-network-figure">
   <div class="cn-network-path" role="img" aria-label="Un proceso cliente atraviesa el host local, la red local y su gateway, Internet enrutada, el host remoto y el proceso servidor.">
@@ -484,5 +484,3 @@ Responda a la pregunta guía: ¿Qué sucede, en cada límite relevante del siste
 Identifique explícitamente un ejemplo del principio extremo a extremo y un ejemplo de funcionalidad que necesariamente pertenece dentro de la red.
 
 Este laboratorio observacional está completo cuando otro estudiante puede reproducir la cronología y el razonamiento a partir de la evidencia conservada.
-
-<div class="cn-end-note"><span>Límite de publicación de la Parte I</span><strong>Continúe con los Capítulos 2–4. Las Partes II–V permanecen intencionalmente sin publicar.</strong></div>

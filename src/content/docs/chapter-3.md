@@ -4,7 +4,7 @@ description: 'Separate propagation, serialization, queueing, throughput, RTT, an
 pagination: false
 ---
 
-<p class="cn-course-kicker">Part I · Chapter 3</p>
+<p class="cn-book-part">Part I · Chapter 3</p>
 <p class="cn-guiding-question">Why does bandwidth alone fail to predict application performance?</p>
 <figure class="cn-network-figure">
   <div class="cn-network-path cn-path-4">
@@ -484,5 +484,3 @@ If you have a controlled reachable peer, collect a small latency sample with `pi
 Compare at least two predictions with observations or with a second independently calculated case. Explain discrepancies using possibilities such as protocol overhead, competing traffic, queueing, startup behavior, host scheduling, and the fact that RTT is not one-way propagation delay.
 
 Finish with a short evidence table containing **prediction, observation, difference, and strongest explanation supported by the evidence**.
-
-<div class="cn-end-note"><span>Part I publication boundary</span><strong>Continue only through Chapter 4. Later book parts are intentionally not published here yet.</strong></div>

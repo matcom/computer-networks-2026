@@ -1,70 +1,97 @@
 ---
 title: "Computer Networks"
-description: "Published material for Computer Networks 2026."
-template: splash
+description: "A bottom-up systems-oriented online book about physical transmission, Internet protocols, measurement, and networked computing."
+template: "splash"
 hero:
   title: "Computer Networks"
-  tagline: "Learn networking by following evidence: predict what should happen, observe real state, build the mechanism, and explain why the result makes sense."
+  tagline: "Learn networking by following evidence: predict what should happen, observe real state, build the mechanism, and explain why the result makes sense—from physical signals to resilient networked systems."
   actions:
     - text: "Start in the Workbench"
       link: "./workbench/"
       icon: "right-arrow"
-    - text: "Open Chapter 1"
-      link: "./chapter-1/"
+    - text: "Explore learning paths"
+      link: "./paths/"
       variant: "minimal"
 tableOfContents: false
 pagination: false
 ---
 
 <div class="cn-home">
-  <p class="cn-release-note"><strong>Current publication:</strong> the Workbench and all of Part I are available: Chapters 1–4, from Internet Architecture through Ethernet and Local Networks. Learning Paths, History, and Curiosities contain only Part I context. Parts II–V remain intentionally unpublished.</p>
+  <section class="cn-home-course cn-learning-section">
+    <div class="cn-section-heading"><span>How you learn here</span><small>Active systems learning</small></div>
+    <div class="cn-learning-grid">
+      <article><b>01</b><strong>Predict</strong><p>Commit to an outcome before a command, trace, or solution reveals it.</p></article>
+      <article><b>02</b><strong>Work it out</strong><p>Follow a small worked example and execute the mechanism by hand once.</p></article>
+      <article><b>03</b><strong>Observe & build</strong><p>Use local tools, deterministic models, packet evidence, and code to test the idea.</p></article>
+      <article><b>04</b><strong>Explain</strong><p>Connect the evidence to protocol state, system boundaries, and design trade-offs.</p></article>
+    </div>
+    <p class="cn-learning-note">The required path is consistent in every chapter: explanation → worked example → guided practice → knowledge check → laboratory. History and curiosities add context without hiding required knowledge.</p>
+  </section>
 
-  <div class="cn-section-heading"><span>Available now</span><small>Required sequence</small></div>
-  <div class="cn-release-grid">
-    <a class="cn-release-card" href="workbench/">
-      <span>Preparation</span>
-      <strong>Workbench</strong>
-      <p>Learn the local-first observation workflow, inspect host and socket state, and follow one loopback HTTP exchange.</p>
-      <small>Begin here →</small>
-    </a>
-    <a class="cn-release-card" href="chapter-1/">
-      <span>Chapter 1</span>
-      <strong>Internet Architecture</strong>
-      <p>See the whole Internet once and follow one exchange across application, host, local network, routers, and remote service.</p>
-      <small>Read Chapter 1 →</small>
-    </a>
-    <a class="cn-release-card" href="chapter-2/">
-      <span>Chapter 2</span>
-      <strong>Physical Layer: Signals and Media</strong>
-      <p>Connect bits and symbols to physical signals, media, noise, synchronization, and receiver decisions.</p>
-      <small>Read Chapter 2 →</small>
-    </a>
-    <a class="cn-release-card" href="chapter-3/">
-      <span>Chapter 3</span>
-      <strong>Network Performance</strong>
-      <p>Separate propagation, serialization, queueing, throughput, RTT, and bandwidth-delay product.</p>
-      <small>Read Chapter 3 →</small>
-    </a>
-    <a class="cn-release-card" href="chapter-4/">
-      <span>Chapter 4</span>
-      <strong>Ethernet and Local Networks</strong>
-      <p>Reason about frames, MAC learning, flooding, forwarding, ARP, and local-network state.</p>
-      <small>Read Chapter 4 →</small>
-    </a>
-  </div>
+  <section class="cn-home-course cn-home-paths">
+    <div class="cn-section-heading"><span>Learning paths</span><a href="paths/">Compare all paths</a></div>
+    <p class="cn-paths-intro">One foundation, four professional directions</p>
+    <div class="cn-path-grid">
+      <a class="cn-path-card" href="paths/#white-hat-security">
+        <span>What can an observer, attacker, or defender learn or manipulate at this boundary?</span>
+        <strong>White Hat Security</strong>
+        <p>Understand normal traffic deeply enough to investigate abnormal and adversarial behavior.</p>
+        <small>Open path →</small>
+      </a>
+      <a class="cn-path-card" href="paths/#sysadmin--operations">
+        <span>What state exists, who owns it, how do I inspect it, and how do I restore service safely?</span>
+        <strong>Sysadmin & Operations</strong>
+        <p>Operate real hosts and services by locating state, isolating failures, and restoring service safely.</p>
+        <small>Open path →</small>
+      </a>
+      <a class="cn-path-card" href="paths/#software-engineer">
+        <span>What guarantees does the network give my program, and which guarantees must my program create itself?</span>
+        <strong>Software Engineer</strong>
+        <p>Build networked software that respects transport semantics, failure modes, performance, and distributed-system boundaries.</p>
+        <small>Open path →</small>
+      </a>
+      <a class="cn-path-card" href="paths/#networking-research">
+        <span>How do we know this claim is true, and how could the network be designed differently?</span>
+        <strong>Networking Research</strong>
+        <p>Turn mechanisms into questions, hypotheses, controlled experiments, measurements, and defensible claims.</p>
+        <small>Open path →</small>
+      </a>
+    </div>
+  </section>
 
-  <div class="cn-section-heading"><span>Part I context</span><small>Optional exploration</small></div>
-  <div class="cn-context-nav">
-    <a class="cn-release-card" href="paths/"><span>Learning paths</span><strong>Four professional lenses</strong><p>See how each Part I chapter contributes to White Hat Security, Sysadmin & Operations, Software Engineering, and Networking Research.</p><small>Explore paths →</small></a>
-    <a class="cn-release-card" href="history/"><span>History</span><strong>Why Part I looks this way</strong><p>Trace packet switching and open internetworking, Shannon's channel limits, queueing roots, and Ethernet's evolution.</p><small>Read the history →</small></a>
-    <a class="cn-release-card" href="curiosities/"><span>Curiosities</span><strong>Memorable consequences</strong><p>Explore eight Part I facts connecting Internet structure, physical limits, performance, and learning switches.</p><small>Open curiosities →</small></a>
-  </div>
+  <section class="cn-home-course">
+    <div class="cn-section-heading"><span>Before Chapter 1</span><a href="workbench/">Open workbench</a></div>
+    <div class="cn-part-grid">
+      <a class="cn-part-card" href="workbench/">
+        <span>Workbench · preparation</span>
+        <strong>Workbench — Learn to Observe the Network</strong>
+        <p>Prepare the Linux workbench, learn the evidence vocabulary, and practice safe local-first experiments before Chapter 1.</p>
+        <small>Prepare the environment →</small>
+      </a>
+    </div>
+  </section>
 
-  <div class="cn-section-heading"><span>How to study</span><small>Evidence before memorization</small></div>
-  <div class="cn-learning-grid">
-    <article><b>01</b><strong>Predict</strong><p>Commit to an expected result before running a command or reading the solution.</p></article>
-    <article><b>02</b><strong>Work it out</strong><p>Follow the mechanism by hand on a small example.</p></article>
-    <article><b>03</b><strong>Observe</strong><p>Use local tools and deterministic evidence to test the idea.</p></article>
-    <article><b>04</b><strong>Explain</strong><p>Connect the observation to protocol state and system boundaries.</p></article>
-  </div>
+  <section class="cn-home-course">
+    <div class="cn-section-heading"><span>The bottom-up book</span><a href="modules/">Contents</a></div>
+    <div class="cn-part-grid">
+      <a class="cn-part-card" href="chapter-1/">
+        <span>Chapters 1–4 · 4 chapters</span>
+        <strong>Part I — From Signals to Local Networks</strong>
+        <p>See the whole Internet once, then rebuild communication from physical signals through performance limits and Ethernet frames.</p>
+        <small>Start this part →</small>
+      </a>
+    </div>
+  </section>
+
+  <section class="cn-home-explore">
+    <div class="cn-section-heading"><span>Explore</span></div>
+    <p><a href="history/"><strong>History of Networking</strong></a> explains why protocols and services acquired their present shape. <a href="curiosities/"><strong>Curiosities</strong></a> collects memorable facts, surprising consequences, and useful networking folklore.</p>
+  </section>
+
+  <footer class="cn-home-footer">
+    <a href="modules/">Book contents</a>
+    <a href="paths/">Learning paths</a>
+    <a href="history/">History</a>
+    <a href="curiosities/">Curiosities</a>
+  </footer>
 </div>

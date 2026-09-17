@@ -1,14 +1,14 @@
 ---
-title: "History · Part I"
-description: "Historical context for the four published chapters in Part I."
+title: "History of Networking"
+description: "Why networking mechanisms acquired their present shape."
 pagination: false
 ---
 
-History is included here only when it explains a design decision in the published part of the book. Part I moves from the invention of packet networking to the physical limits of communication, the mathematics of waiting, and the evolution of Ethernet.
+Networking history is most useful when it explains why a design exists. These notes connect the mechanisms in the opening chapters to the engineering problems that shaped them.
 
 ## Chapter 1 · From circuits to an Internet
 
-<div class="cn-context-card"><span>1960s–1983</span><strong>Why packet switching replaced the telephone-network mental model</strong><p>Time-shared computers generated bursty traffic: long quiet periods followed by short bursts of commands or data. Reserving one end-to-end circuit for an entire conversation wasted capacity. Packet switching instead divided data into packets that statistically shared links with traffic from other conversations.</p></div>
+<div class="cn-book-note cn-history"><span class="cn-book-note-label">1960s–1983</span><strong>Why packet switching replaced the telephone-network mental model</strong><p>Time-shared computers generated bursty traffic: long quiet periods followed by short bursts of commands or data. Reserving one end-to-end circuit for an entire conversation wasted capacity. Packet switching instead divided data into packets that statistically shared links with traffic from other conversations.</p></div>
 
 Researchers at MIT, RAND, and the UK's National Physical Laboratory explored packet-oriented networking independently during the 1960s. ARPANET made the idea operational. Packet switching did not eliminate contention; it changed how contention appeared. Packets could queue, experience variable delay, or be dropped when buffers filled.
 
@@ -26,7 +26,7 @@ The January 1, 1983 ARPANET transition from NCP to TCP/IP is often remembered as
 
 ## Chapter 2 · Information meets physics
 
-<div class="cn-context-card"><span>1948–present</span><strong>Shannon turned channel limits into a mathematical question</strong><p>Claude Shannon separated information from any one physical representation and showed that bandwidth and noise impose fundamental limits on reliable communication.</p></div>
+<div class="cn-book-note cn-history"><span class="cn-book-note-label">1948–present</span><strong>Shannon turned channel limits into a mathematical question</strong><p>Claude Shannon separated information from any one physical representation and showed that bandwidth and noise impose fundamental limits on reliable communication.</p></div>
 
 Before modern computer networks, communication engineers already knew that real channels were noisy and finite. Shannon's 1948 work reframed the problem in terms of information itself. The same information can be represented by voltage levels, light pulses, radio symbols, or another physical encoding.
 
@@ -36,7 +36,7 @@ This is why the physical layer belongs in a computer-science networking course. 
 
 ## Chapter 3 · Waiting became a mathematical object before packet networks
 
-<div class="cn-context-card"><span>Early 20th century–present</span><strong>Queueing theory predates the Internet</strong><p>Telephone engineers already needed models for shared resources and waiting time. Packet networks inherited the same basic problem: work arrives unpredictably, finite resources serve it, and delay rises rapidly as utilization approaches capacity.</p></div>
+<div class="cn-book-note cn-history"><span class="cn-book-note-label">Early 20th century–present</span><strong>Queueing theory predates the Internet</strong><p>Telephone engineers already needed models for shared resources and waiting time. Packet networks inherited the same basic problem: work arrives unpredictably, finite resources serve it, and delay rises rapidly as utilization approaches capacity.</p></div>
 
 Network performance did not invent the mathematics of waiting. Telephony had already forced engineers to ask how many shared resources were needed for unpredictable demand and how waiting changed as load approached service capacity.
 
@@ -46,7 +46,7 @@ The historical connection matters because it shows that queueing delay is not an
 
 ## Chapter 4 · Ethernet changed while its abstraction survived
 
-<div class="cn-context-card"><span>1970s–present</span><strong>Ethernet survived by changing almost everything around its familiar frame/address model</strong><p>Early Ethernet was a shared medium with collisions; modern Ethernet is normally switched and full-duplex. The name persisted while topology, media, speed, and contention behavior changed dramatically.</p></div>
+<div class="cn-book-note cn-history"><span class="cn-book-note-label">1970s–present</span><strong>Ethernet survived by changing almost everything around its familiar frame/address model</strong><p>Early Ethernet was a shared medium with collisions; modern Ethernet is normally switched and full-duplex. The name persisted while topology, media, speed, and contention behavior changed dramatically.</p></div>
 
 Ethernet began at Xerox PARC in the 1970s to connect workstations, servers, and printers. Early stations shared a communication medium, so medium access was a central protocol problem: two stations could transmit simultaneously, their signals could interfere, and the network needed collision detection and randomized retry behavior.
 
@@ -55,5 +55,3 @@ That is the historical setting behind CSMA/CD. Its timing rules made sense only 
 Ethernet then evolved from shared coaxial media through hubs to learning switches and full-duplex point-to-point links. Ordinary collisions disappeared from modern switched Ethernet, speeds increased by orders of magnitude, and physical media changed substantially. Yet higher layers still see a recognizable Ethernet frame and MAC-address abstraction.
 
 The design lesson is that a successful interface can outlive the mechanism that originally motivated it. History helps distinguish Ethernet's ancestry from the behavior students should expect on a modern LAN.
-
-<div class="cn-end-note"><span>Part I boundary</span><strong>No history from Parts II–V is published here yet.</strong></div>

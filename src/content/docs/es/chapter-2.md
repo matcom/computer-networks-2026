@@ -4,7 +4,7 @@ description: 'Conecte bits, símbolos, medios físicos, ruido, tasa y decisiones
 pagination: false
 ---
 
-<p class="cn-course-kicker">Parte I · Capítulo 2</p>
+<p class="cn-book-part">Parte I · Capítulo 2</p>
 <p class="cn-guiding-question">¿Cómo convierte una computadora bits en señales físicas que otra máquina puede recuperar de forma confiable?</p>
 <figure class="cn-network-figure">
   <div class="cn-network-path cn-path-5">
@@ -542,5 +542,3 @@ Cuando su sistema lo permita, inspeccione una interfaz real con herramientas com
 Codifique `1 0 1 1 0 0 1` con su modelo de dos niveles. Perturbe un nivel recibido hasta cruzar el umbral, decodifique de nuevo e identifique exactamente qué bit cambia.
 
 Termine explicando el recorrido **bit → símbolo → forma de onda → medio → decisión del receptor → bit recuperado**, incluyendo por qué importan el ruido y la sincronización.
-
-<div class="cn-end-note"><span>Límite de publicación de la Parte I</span><strong>Continúe únicamente hasta el Capítulo 4. Las partes posteriores del libro todavía no se publican aquí.</strong></div>

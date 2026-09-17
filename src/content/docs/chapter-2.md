@@ -4,7 +4,7 @@ description: 'Connect bits, symbols, physical media, noise, rate, and receiver d
 pagination: false
 ---
 
-<p class="cn-course-kicker">Part I · Chapter 2</p>
+<p class="cn-book-part">Part I · Chapter 2</p>
 <p class="cn-guiding-question">How does a computer turn bits into physical signals that another machine can recover reliably?</p>
 <figure class="cn-network-figure">
   <div class="cn-network-path cn-path-5">
@@ -569,5 +569,3 @@ When supported on your system, inspect one real interface with tools such as `ip
 Encode `1 0 1 1 0 0 1` with your two-level model. Perturb one received level until it crosses the decision threshold, decode again, and identify exactly which bit changes.
 
 Finish by explaining the path from **bit → symbol → waveform → medium → receiver decision → recovered bit**, including why noise and synchronization matter.
-
-<div class="cn-end-note"><span>Part I publication boundary</span><strong>Continue only through Chapter 4. Later book parts are intentionally not published here yet.</strong></div>

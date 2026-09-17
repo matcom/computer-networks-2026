@@ -4,7 +4,7 @@ description: 'Razone sobre tramas Ethernet, aprendizaje MAC, flooding, reenvío 
 pagination: false
 ---
 
-<p class="cn-course-kicker">Parte I · Capítulo 4</p>
+<p class="cn-book-part">Parte I · Capítulo 4</p>
 <p class="cn-guiding-question">¿Cómo entrega un host un paquete a otra máquina en la misma red local?</p>
 <figure class="cn-network-figure">
   <div class="cn-network-path cn-path-4">
@@ -493,5 +493,3 @@ Use código, una tabla, tarjetas sobre papel u otro método reproducible para de
 En una interfaz real/local inspeccione `ip link` e `ip neigh`. Si dispone de captura de paquetes autorizada, observe una solicitud/respuesta ARP e identifique por separado las direcciones Ethernet de origen/destino y las direcciones de protocolo sender/target dentro de ARP.
 
 Termine con dos explicaciones: una secuencia donde cambia la tabla del switch pero no la caché ARP del host y otra donde cambia el estado ARP sin cambiar la topología física del switch.
-
-<div class="cn-end-note"><span>Límite de publicación de la Parte I</span><strong>Continúe únicamente hasta el Capítulo 4. Las partes posteriores del libro todavía no se publican aquí.</strong></div>

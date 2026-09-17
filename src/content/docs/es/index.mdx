@@ -1,70 +1,97 @@
 ---
 title: "Redes de Computadoras"
-description: "Material publicado de Redes de Computadoras 2026."
-template: splash
+description: "Un libro en línea, orientado a sistemas y construido de abajo hacia arriba, sobre transmisión física, protocolos de Internet, medición y computación en red."
+template: "splash"
 hero:
   title: "Redes de Computadoras"
-  tagline: "Aprenda redes siguiendo evidencia: prediga qué debería ocurrir, observe estado real, construya el mecanismo y explique por qué el resultado tiene sentido."
+  tagline: "Aprenda redes siguiendo evidencia: prediga qué debería ocurrir, observe estado real, construya el mecanismo y explique por qué el resultado tiene sentido, desde señales físicas hasta sistemas en red resilientes."
   actions:
     - text: "Comenzar por el Taller"
       link: "./workbench/"
       icon: "right-arrow"
-    - text: "Abrir el Capítulo 1"
-      link: "./chapter-1/"
+    - text: "Explorar rutas de aprendizaje"
+      link: "./paths/"
       variant: "minimal"
 tableOfContents: false
 pagination: false
 ---
 
 <div class="cn-home">
-  <p class="cn-release-note"><strong>Publicación actual:</strong> están disponibles el Taller y toda la Parte I: Capítulos 1–4, desde Arquitectura de Internet hasta Ethernet y Redes Locales. Rutas de aprendizaje, Historia y Curiosidades contienen únicamente contexto de la Parte I. Las Partes II–V permanecen intencionalmente sin publicar.</p>
+  <section class="cn-home-course cn-learning-section">
+    <div class="cn-section-heading"><span>Cómo se aprende aquí</span><small>Aprendizaje activo de sistemas</small></div>
+    <div class="cn-learning-grid">
+      <article><b>01</b><strong>Predecir</strong><p>Comprométase con un resultado antes de que un comando, una traza o la solución lo revele.</p></article>
+      <article><b>02</b><strong>Resolver</strong><p>Siga un ejemplo pequeño y ejecute el mecanismo manualmente al menos una vez.</p></article>
+      <article><b>03</b><strong>Observar y construir</strong><p>Use herramientas locales, modelos deterministas, evidencia de paquetes y código para comprobar la idea.</p></article>
+      <article><b>04</b><strong>Explicar</strong><p>Conecte la evidencia con el estado del protocolo, los límites del sistema y los compromisos de diseño.</p></article>
+    </div>
+    <p class="cn-learning-note">La secuencia obligatoria se mantiene en cada capítulo: explicación → ejemplo resuelto → práctica guiada → comprobación de conocimientos → laboratorio. La historia y las curiosidades añaden contexto sin ocultar el conocimiento obligatorio.</p>
+  </section>
 
-  <div class="cn-section-heading"><span>Disponible ahora</span><small>Secuencia obligatoria</small></div>
-  <div class="cn-release-grid">
-    <a class="cn-release-card" href="workbench/">
-      <span>Preparación</span>
-      <strong>Taller</strong>
-      <p>Aprenda el flujo de observación local, inspeccione el estado del host y de los sockets y siga un intercambio HTTP por loopback.</p>
-      <small>Comenzar aquí →</small>
-    </a>
-    <a class="cn-release-card" href="chapter-1/">
-      <span>Capítulo 1</span>
-      <strong>Arquitectura de Internet</strong>
-      <p>Vea Internet como un sistema completo y siga un intercambio entre aplicación, host, red local, routers y servicio remoto.</p>
-      <small>Leer el Capítulo 1 →</small>
-    </a>
-    <a class="cn-release-card" href="chapter-2/">
-      <span>Capítulo 2</span>
-      <strong>Capa Física: Señales y Medios</strong>
-      <p>Conecte bits y símbolos con señales físicas, medios, ruido, sincronización y decisiones del receptor.</p>
-      <small>Leer el Capítulo 2 →</small>
-    </a>
-    <a class="cn-release-card" href="chapter-3/">
-      <span>Capítulo 3</span>
-      <strong>Rendimiento de Redes</strong>
-      <p>Separe propagación, serialización, colas, throughput, RTT y producto ancho de banda-retardo.</p>
-      <small>Leer el Capítulo 3 →</small>
-    </a>
-    <a class="cn-release-card" href="chapter-4/">
-      <span>Capítulo 4</span>
-      <strong>Ethernet y Redes Locales</strong>
-      <p>Razone sobre tramas, aprendizaje MAC, flooding, reenvío, ARP y estado de la red local.</p>
-      <small>Leer el Capítulo 4 →</small>
-    </a>
-  </div>
+  <section class="cn-home-course cn-home-paths">
+    <div class="cn-section-heading"><span>Rutas de aprendizaje</span><a href="paths/">Comparar rutas</a></div>
+    <p class="cn-paths-intro">Una base común, cuatro direcciones profesionales</p>
+    <div class="cn-path-grid">
+      <a class="cn-path-card" href="paths/#seguridad-white-hat">
+        <span>¿Qué puede aprender o manipular un observador, atacante o defensor en este límite?</span>
+        <strong>Seguridad White Hat</strong>
+        <p>Comprenda el tráfico normal con suficiente profundidad para investigar comportamiento anómalo y adversarial.</p>
+        <small>Abrir ruta →</small>
+      </a>
+      <a class="cn-path-card" href="paths/#sysadmin-y-operaciones">
+        <span>¿Qué estado existe, quién lo posee, cómo lo inspecciono y cómo restauro el servicio de forma segura?</span>
+        <strong>Sysadmin y Operaciones</strong>
+        <p>Opere hosts y servicios reales localizando estado, aislando fallos y restaurando el servicio de forma segura.</p>
+        <small>Abrir ruta →</small>
+      </a>
+      <a class="cn-path-card" href="paths/#ingeniería-de-software">
+        <span>¿Qué garantías ofrece la red a mi programa y cuáles debe construir el propio programa?</span>
+        <strong>Ingeniería de Software</strong>
+        <p>Construya software en red que respete semántica de transporte, modos de fallo, rendimiento y límites de sistemas distribuidos.</p>
+        <small>Abrir ruta →</small>
+      </a>
+      <a class="cn-path-card" href="paths/#investigación-en-redes">
+        <span>¿Cómo sabemos que esta afirmación es cierta y cómo podría diseñarse la red de otra manera?</span>
+        <strong>Investigación en Redes</strong>
+        <p>Convierta mecanismos en preguntas, hipótesis, experimentos controlados, mediciones y afirmaciones defendibles.</p>
+        <small>Abrir ruta →</small>
+      </a>
+    </div>
+  </section>
 
-  <div class="cn-section-heading"><span>Contexto de la Parte I</span><small>Exploración opcional</small></div>
-  <div class="cn-context-nav">
-    <a class="cn-release-card" href="paths/"><span>Rutas de aprendizaje</span><strong>Cuatro perspectivas profesionales</strong><p>Vea cómo cada capítulo de la Parte I contribuye a Seguridad White Hat, Sysadmin y Operaciones, Ingeniería de Software e Investigación en Redes.</p><small>Explorar rutas →</small></a>
-    <a class="cn-release-card" href="history/"><span>Historia</span><strong>Por qué la Parte I tiene esta forma</strong><p>Recorra conmutación de paquetes e interconexión abierta, límites de Shannon, raíces de la teoría de colas y evolución de Ethernet.</p><small>Leer la historia →</small></a>
-    <a class="cn-release-card" href="curiosities/"><span>Curiosidades</span><strong>Consecuencias memorables</strong><p>Explore ocho hechos de la Parte I que conectan estructura de Internet, límites físicos, rendimiento y switches con aprendizaje.</p><small>Abrir curiosidades →</small></a>
-  </div>
+  <section class="cn-home-course">
+    <div class="cn-section-heading"><span>Antes del Capítulo 1</span><a href="workbench/">Abrir taller</a></div>
+    <div class="cn-part-grid">
+      <a class="cn-part-card" href="workbench/">
+        <span>Taller · preparación</span>
+        <strong>Taller — Aprender a observar la red</strong>
+        <p>Prepare el entorno Linux, aprenda el vocabulario de evidencia y practique experimentos locales y seguros antes del Capítulo 1.</p>
+        <small>Preparar el entorno →</small>
+      </a>
+    </div>
+  </section>
 
-  <div class="cn-section-heading"><span>Cómo estudiar</span><small>Evidencia antes que memorización</small></div>
-  <div class="cn-learning-grid">
-    <article><b>01</b><strong>Predecir</strong><p>Comprométase con un resultado esperado antes de ejecutar un comando o leer la solución.</p></article>
-    <article><b>02</b><strong>Resolver</strong><p>Siga manualmente el mecanismo sobre un ejemplo pequeño.</p></article>
-    <article><b>03</b><strong>Observar</strong><p>Use herramientas locales y evidencia determinista para comprobar la idea.</p></article>
-    <article><b>04</b><strong>Explicar</strong><p>Relacione la observación con el estado del protocolo y los límites del sistema.</p></article>
-  </div>
+  <section class="cn-home-course">
+    <div class="cn-section-heading"><span>El libro de abajo hacia arriba</span><a href="modules/">Contenido</a></div>
+    <div class="cn-part-grid">
+      <a class="cn-part-card" href="chapter-1/">
+        <span>Capítulos 1–4 · 4 capítulos</span>
+        <strong>Parte I — De señales a redes locales</strong>
+        <p>Vea Internet como un sistema completo y reconstruya la comunicación desde las señales físicas hasta los límites de rendimiento y las tramas Ethernet.</p>
+        <small>Comenzar esta parte →</small>
+      </a>
+    </div>
+  </section>
+
+  <section class="cn-home-explore">
+    <div class="cn-section-heading"><span>Explorar</span></div>
+    <p><a href="history/"><strong>Historia de las redes</strong></a> explica por qué protocolos y servicios adquirieron su forma actual. <a href="curiosities/"><strong>Curiosidades</strong></a> reúne hechos memorables, consecuencias sorprendentes y folklore útil de redes.</p>
+  </section>
+
+  <footer class="cn-home-footer">
+    <a href="modules/">Contenido del libro</a>
+    <a href="paths/">Rutas de aprendizaje</a>
+    <a href="history/">Historia</a>
+    <a href="curiosities/">Curiosidades</a>
+  </footer>
 </div>

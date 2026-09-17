@@ -4,7 +4,7 @@ description: 'Follow one Internet exchange across system boundaries.'
 pagination: false
 ---
 
-<p class="cn-course-kicker">Chapter 1</p>
+<p class="cn-book-part">Chapter 1</p>
 <p class="cn-guiding-question">What happens, at every relevant system boundary, when one program communicates with another program across a network?</p>
 <figure class="cn-network-figure">
   <div class="cn-network-path" role="img" aria-label="A client process crosses the local host, local network and gateway, routed Internet, remote host, and server process.">
@@ -484,5 +484,3 @@ Answer the guiding question: what happens, at every relevant system boundary, wh
 Explicitly identify one example of the end-to-end principle and one example of functionality that necessarily belongs inside the network.
 
 This observational lab is complete when another student can reproduce the timeline and reasoning from the evidence you preserved.
-
-<div class="cn-end-note"><span>Part I publication boundary</span><strong>Continue through Chapters 2–4. Parts II–V remain intentionally unpublished.</strong></div>

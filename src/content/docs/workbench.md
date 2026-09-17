@@ -4,7 +4,7 @@ description: 'Tools, evidence, and a local-first workflow for beginning the cour
 pagination: false
 ---
 
-<p class="cn-course-kicker">Preparation before Chapter 1</p>
+<p class="cn-book-part">Preparation before Chapter 1</p>
 <p class="cn-guiding-question">How can you observe real network state and preserve reproducible evidence before troubleshooting it?</p>
 ## Why this chapter matters
 
@@ -608,6 +608,6 @@ Create a short technical note containing commands and text evidence rather than 
 3. What could you still learn if GitHub were unavailable for the entire semester?
 4. Which tool would you reach for first if a hostname resolved but a TCP connection failed?
 
-There is no pass/fail programming suite for this lab: the learning objective is correct observation and interpretation. This publication focuses on reproducible observation and interpretation.
+There is no pass/fail programming suite for this lab: the learning objective is correct observation, reproducible evidence, and interpretation.
 
 <div class="cn-end-note"><span>Next available material</span><strong><a href="../chapter-1/">Chapter 1 · Internet Architecture →</a></strong></div>

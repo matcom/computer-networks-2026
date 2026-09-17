@@ -4,7 +4,7 @@ description: 'Separe propagación, serialización, colas, throughput, RTT y prod
 pagination: false
 ---
 
-<p class="cn-course-kicker">Parte I · Capítulo 3</p>
+<p class="cn-book-part">Parte I · Capítulo 3</p>
 <p class="cn-guiding-question">¿Por qué el ancho de banda por sí solo no predice el rendimiento de una aplicación?</p>
 <figure class="cn-network-figure">
   <div class="cn-network-path cn-path-4">
@@ -484,5 +484,3 @@ Si dispone de un peer controlado y alcanzable, obtenga una pequeña muestra de l
 Compare al menos dos predicciones con observaciones o con un segundo cálculo independiente. Explique diferencias mediante factores como overhead de protocolos, tráfico competidor, colas, comportamiento de arranque, scheduling del host y el hecho de que RTT no equivale al retardo de propagación en un solo sentido.
 
 Termine con una tabla breve que contenga **predicción, observación, diferencia y la explicación más fuerte respaldada por la evidencia**.
-
-<div class="cn-end-note"><span>Límite de publicación de la Parte I</span><strong>Continúe únicamente hasta el Capítulo 4. Las partes posteriores del libro todavía no se publican aquí.</strong></div>

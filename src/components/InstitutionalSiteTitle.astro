@@ -1,0 +1,99 @@
+---
+const { siteTitleHref } = Astro.locals.starlightRoute;
+const logoSrc = `${import.meta.env.BASE_URL}assets/uh-logo.jpg`;
+const isSpanish = Astro.currentLocale === 'es';
+const courseTitle = isSpanish ? 'Redes de Computadoras 2026' : 'Computer Networks 2026';
+const homeLabel = isSpanish ? 'Inicio de Redes de Computadoras 2026' : 'Computer Networks 2026 home';
+---
+
+<a class="uh-brand" href={siteTitleHref} aria-label={homeLabel}>
+  <img src={logoSrc} alt="" width="128" height="171" decoding="async" />
+  <span class="uh-brand-copy">
+    <strong>Universidad de La Habana</strong>
+    <span class="uh-brand-context uh-brand-context-full">Facultad de Matemática y Computación · {courseTitle}</span>
+    <span class="uh-brand-context uh-brand-context-compact">MatCom · {courseTitle}</span>
+  </span>
+</a>
+
+<style>
+  .uh-brand {
+    display: inline-flex;
+    align-items: center;
+    min-width: 0;
+    gap: 0.62rem;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .uh-brand:focus-visible {
+    outline: 3px solid #6aa9b8;
+    outline-offset: 3px;
+    border-radius: 0.25rem;
+  }
+
+  .uh-brand img {
+    width: auto;
+    height: 2.25rem;
+    flex: 0 0 auto;
+    object-fit: contain;
+  }
+
+  .uh-brand-copy {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    line-height: 1.12;
+  }
+
+  .uh-brand strong {
+    overflow: hidden;
+    color: var(--cn-navy, #0c2535);
+    font-size: 0.82rem;
+    font-weight: 750;
+    letter-spacing: 0.005em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .uh-brand-context {
+    overflow: hidden;
+    margin-top: 0.16rem;
+    color: var(--sl-color-gray-2);
+    font-size: 0.67rem;
+    font-weight: 520;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .uh-brand-context-compact {
+    display: none;
+  }
+
+  @media (max-width: 68rem) {
+    .uh-brand-context-full {
+      display: none;
+    }
+
+    .uh-brand-context-compact {
+      display: block;
+    }
+  }
+
+  @media (max-width: 30rem) {
+    .uh-brand {
+      gap: 0.48rem;
+    }
+
+    .uh-brand img {
+      height: 1.95rem;
+    }
+
+    .uh-brand strong {
+      font-size: 0.76rem;
+    }
+
+    .uh-brand-context {
+      font-size: 0.62rem;
+    }
+  }
+</style>

@@ -4,7 +4,7 @@ description: 'Herramientas, evidencia y flujo de trabajo local para comenzar el 
 pagination: false
 ---
 
-<p class="cn-course-kicker">Preparación antes del Capítulo 1</p>
+<p class="cn-book-part">Preparación antes del Capítulo 1</p>
 <p class="cn-guiding-question">¿Cómo observar el estado real de una red y conservar evidencia reproducible antes de diagnosticarla?</p>
 ## Por qué importa este capítulo
 
@@ -608,6 +608,6 @@ Cree una breve nota técnica que contenga comandos y evidencia de texto en lugar
 3. ¿Qué podría aprender aun si GitHub no estuviera disponible durante todo el semestre?
 4. ¿A qué herramienta recurriría primero si un nombre de host se resolviera pero fallara la conexión TCP?
 
-No existe una suite automatizada de aprobado/reprobado para esta práctica de laboratorio: el objetivo de aprendizaje es la observación e interpretación correcta. Esta publicación se centra en la observación y la interpretación reproducibles.
+No existe una suite automatizada de aprobado/reprobado para esta práctica de laboratorio: el objetivo es la observación correcta, la evidencia reproducible y su interpretación.
 
 <div class="cn-end-note"><span>Siguiente material disponible</span><strong><a href="../chapter-1/">Capítulo 1 · Arquitectura de Internet →</a></strong></div>
