@@ -1,0 +1,27 @@
+{
+  "name": "switched-lan",
+  "description": "Three hosts connected to one learning switch for Ethernet and ARP exercises.",
+  "nodes": [
+    "H1",
+    "H2",
+    "H3",
+    "S1"
+  ],
+  "links": [
+    {
+      "a": "H1",
+      "b": "S1",
+      "port_b": "p1"
+    },
+    {
+      "a": "H2",
+      "b": "S1",
+      "port_b": "p2"
+    },
+    {
+      "a": "H3",
+      "b": "S1",
+      "port_b": "p3"
+    }
+  ]
+}

@@ -1,15 +1,76 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
-<title id="t">Ethernet switch learning</title><desc id="d">Four hosts connect to a learning switch. Frames move from host A to B while the switch learns source MAC to port mappings.</desc>
-<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L9 3 0 6Z" fill="#0a6074"/></marker></defs>
-<g font-family="ui-sans-serif,system-ui,sans-serif" text-anchor="middle">
-  <g stroke="#8eb7c3" stroke-width="8" fill="none"><path d="M260 215L495 315M940 215L705 315M260 500L495 370M940 500L705 370"/></g>
-  <rect x="465" y="275" width="270" height="135" rx="24" fill="#102a3a"/>
-  <g fill="#f5f7f8"><rect x="495" y="320" width="42" height="34" rx="5"/><rect x="552" y="320" width="42" height="34" rx="5"/><rect x="609" y="320" width="42" height="34" rx="5"/><rect x="666" y="320" width="42" height="34" rx="5"/></g>
-  <g fill="#52b98b"><circle cx="516" cy="375" r="6"/><circle cx="573" cy="375" r="6"/><circle cx="630" cy="375" r="6"/></g>
-  <g fill="#f8fbfc" stroke="#b8c8d0" stroke-width="3"><rect x="110" y="145" width="210" height="125" rx="22"/><rect x="880" y="145" width="210" height="125" rx="22"/><rect x="110" y="430" width="210" height="125" rx="22"/><rect x="880" y="430" width="210" height="125" rx="22"/></g>
-  <g fill="#102a3a" font-size="30" font-weight="700"><text x="215" y="218">A</text><text x="985" y="218">B</text><text x="215" y="503">C</text><text x="985" y="503">D</text></g>
-  <g><rect x="500" y="92" width="200" height="125" rx="18" fill="#f8fbfc" stroke="#d9e0e4"/><text x="600" y="126" font-size="19" fill="#60717f">MAC</text><text x="600" y="158" font-size="20" font-weight="700" fill="#102a3a">A → 1</text><text x="600" y="190" font-size="20" font-weight="700" fill="#102a3a">B → 2</text></g>
-  <g fill="#3c8dde"><rect x="320" y="240" width="30" height="30" rx="6"/><rect x="365" y="258" width="30" height="30" rx="6"/></g>
-  <g fill="#52b98b"><rect x="805" y="258" width="30" height="30" rx="6"/><rect x="850" y="240" width="30" height="30" rx="6"/></g>
-  <path d="M350 255C440 255 455 310 492 330" stroke="#0a6074" stroke-width="5" fill="none" marker-end="url(#a)"/><path d="M708 330C760 315 785 270 850 255" stroke="#0a6074" stroke-width="5" fill="none" marker-end="url(#a)"/>
-</g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">Ethernet learning switch forwarding trace</title>
+<desc id="desc">Four hosts A through D connect to switch ports 1 through 4. First A sends to D while D is unknown: the switch learns A on port 1 and floods to ports 2, 3, and 4. D replies to A: the switch learns D on port 4 and forwards only to port 1. A MAC table shows the learned state.</desc>
+<style>
+text{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;fill:#17324a}.h{font-size:31px;font-weight:780}.m{font-size:20px;font-weight:750}.b{font-size:17px}.s{font-size:14px;fill:#5d7280}.w{fill:#fff}.mono{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:14px}
+</style>
+<rect width="1600" height="1000" fill="#fff"/>
+<text x="70" y="64" class="h">A learning switch builds forwarding state from source MAC addresses</text>
+<text x="70" y="98" class="b">Learning and forwarding are separate decisions: learn from the source; look up the destination.</text>
+<defs><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#0f8b8d"/></marker><marker id="o" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#d97824"/></marker></defs>
+
+<!-- topology -->
+<g transform="translate(115,160)">
+ <rect width="180" height="115" rx="16" fill="#eef5f7" stroke="#9bb7c2" stroke-width="3"/><rect x="30" y="18" width="120" height="65" rx="7" fill="#bdd9e5" stroke="#365b72" stroke-width="4"/><text x="90" y="58" text-anchor="middle" class="h" font-size="28">A</text><path d="M58 90h64l17 14H41z" fill="#456d84"/>
+ <text x="90" y="-15" text-anchor="middle" class="m">Host A</text><text x="90" y="140" text-anchor="middle" class="mono">AA:AA:…</text>
+</g>
+<g transform="translate(115,330)">
+ <rect width="180" height="115" rx="16" fill="#eef5f7" stroke="#9bb7c2" stroke-width="3"/><rect x="30" y="18" width="120" height="65" rx="7" fill="#bdd9e5" stroke="#365b72" stroke-width="4"/><text x="90" y="58" text-anchor="middle" class="h" font-size="28">B</text><path d="M58 90h64l17 14H41z" fill="#456d84"/>
+ <text x="90" y="140" text-anchor="middle" class="mono">BB:BB:…</text>
+</g>
+<g transform="translate(1305,160)">
+ <rect width="180" height="115" rx="16" fill="#eef5f7" stroke="#9bb7c2" stroke-width="3"/><rect x="30" y="18" width="120" height="65" rx="7" fill="#bdd9e5" stroke="#365b72" stroke-width="4"/><text x="90" y="58" text-anchor="middle" class="h" font-size="28">C</text><path d="M58 90h64l17 14H41z" fill="#456d84"/>
+ <text x="90" y="-15" text-anchor="middle" class="m">Host C</text><text x="90" y="140" text-anchor="middle" class="mono">CC:CC:…</text>
+</g>
+<g transform="translate(1305,330)">
+ <rect width="180" height="115" rx="16" fill="#eef5f7" stroke="#9bb7c2" stroke-width="3"/><rect x="30" y="18" width="120" height="65" rx="7" fill="#bdd9e5" stroke="#365b72" stroke-width="4"/><text x="90" y="58" text-anchor="middle" class="h" font-size="28">D</text><path d="M58 90h64l17 14H41z" fill="#456d84"/>
+ <text x="90" y="140" text-anchor="middle" class="mono">DD:DD:…</text>
+</g>
+<g transform="translate(650,225)">
+ <rect width="300" height="150" rx="24" fill="#153a56"/>
+ <text x="150" y="-18" text-anchor="middle" class="m">Learning Ethernet switch</text>
+ <g fill="#d7edf1"><rect x="35" y="63" width="45" height="35" rx="5"/><rect x="95" y="63" width="45" height="35" rx="5"/><rect x="160" y="63" width="45" height="35" rx="5"/><rect x="220" y="63" width="45" height="35" rx="5"/></g>
+ <g class="w" font-size="14" font-weight="700"><text x="58" y="122" text-anchor="middle">1</text><text x="118" y="122" text-anchor="middle">2</text><text x="182" y="122" text-anchor="middle">3</text><text x="242" y="122" text-anchor="middle">4</text></g>
+</g>
+<path d="M295 218H650M295 388H590V300H650M950 218h355M950 300h60v88h295" fill="none" stroke="#4f788f" stroke-width="5"/>
+<g class="s"><text x="470" y="207">port 1</text><text x="472" y="377">port 2</text><text x="1120" y="207">port 3</text><text x="1120" y="377">port 4</text></g>
+
+<!-- Step 1 -->
+<g transform="translate(55,525)">
+ <rect width="700" height="355" rx="22" fill="#f7fafb" stroke="#c7d8df" stroke-width="2"/>
+ <circle cx="42" cy="42" r="25" fill="#0f8b8d"/><text x="42" y="50" text-anchor="middle" class="m w">1</text>
+ <text x="82" y="50" class="m">A → D, destination unknown</text>
+ <text x="30" y="88" class="b">Ingress frame: source A, destination D, arriving on port 1.</text>
+ <rect x="45" y="125" width="180" height="78" rx="12" fill="#e7f3f5"/><text x="135" y="154" text-anchor="middle" class="m">Learn source</text><text x="135" y="181" text-anchor="middle" class="mono">A → port 1</text>
+ <line x1="245" y1="164" x2="355" y2="164" stroke="#0f8b8d" stroke-width="5" marker-end="url(#a)"/>
+ <rect x="375" y="125" width="280" height="78" rx="12" fill="#fff1e6"/><text x="515" y="154" text-anchor="middle" class="m">Lookup D: no entry</text><text x="515" y="181" text-anchor="middle" class="b">Flood except ingress port</text>
+ <g transform="translate(55,240)">
+   <rect width="105" height="54" rx="10" fill="#0f8b8d"/><text x="52" y="34" text-anchor="middle" class="m w">A→D</text>
+   <line x1="105" y1="27" x2="255" y2="27" stroke="#d97824" stroke-width="5" marker-end="url(#o)"/>
+   <line x1="255" y1="27" x2="355" y2="-35" stroke="#d97824" stroke-width="4" marker-end="url(#o)"/>
+   <line x1="255" y1="27" x2="355" y2="27" stroke="#d97824" stroke-width="4" marker-end="url(#o)"/>
+   <line x1="255" y1="27" x2="355" y2="89" stroke="#d97824" stroke-width="4" marker-end="url(#o)"/>
+   <text x="410" y="-28" class="b">port 2 → B ignores</text><text x="410" y="34" class="b">port 3 → C ignores</text><text x="410" y="96" class="b">port 4 → D accepts</text>
+ </g>
+</g>
+
+<!-- Step 2 -->
+<g transform="translate(785,525)">
+ <rect width="760" height="355" rx="22" fill="#f7fafb" stroke="#c7d8df" stroke-width="2"/>
+ <circle cx="42" cy="42" r="25" fill="#0f8b8d"/><text x="42" y="50" text-anchor="middle" class="m w">2</text>
+ <text x="82" y="50" class="m">D → A, destination now known</text>
+ <text x="30" y="88" class="b">D replies on port 4. The switch learns D and finds A in its table.</text>
+ <rect x="35" y="125" width="200" height="78" rx="12" fill="#e7f3f5"/><text x="135" y="154" text-anchor="middle" class="m">Learn source</text><text x="135" y="181" text-anchor="middle" class="mono">D → port 4</text>
+ <line x1="250" y1="164" x2="350" y2="164" stroke="#0f8b8d" stroke-width="5" marker-end="url(#a)"/>
+ <rect x="365" y="125" width="200" height="78" rx="12" fill="#e7f3f5"/><text x="465" y="154" text-anchor="middle" class="m">Lookup A</text><text x="465" y="181" text-anchor="middle" class="mono">A → port 1</text>
+ <line x1="580" y1="164" x2="690" y2="164" stroke="#0f8b8d" stroke-width="5" marker-end="url(#a)"/>
+ <text x="650" y="218" text-anchor="middle" class="s">forward only on port 1</text>
+ <rect x="35" y="245" width="690" height="78" rx="12" fill="#edf5f7"/>
+ <text x="55" y="272" class="m">MAC table after the exchange</text>
+ <text x="55" y="303" class="mono">A → port 1</text><text x="250" y="303" class="mono">D → port 4</text>
+ <text x="455" y="303" class="s">B and C are still unknown until they send.</text>
+</g>
+
+<rect x="70" y="920" width="1460" height="48" rx="14" fill="#e8f5f6"/>
+<text x="800" y="951" text-anchor="middle" class="b"><tspan font-weight="760">Rule:</tspan> learn source MAC → ingress port; then lookup destination MAC → forward one port, flood unknown, or filter if destination is on ingress.</text>
+</svg>

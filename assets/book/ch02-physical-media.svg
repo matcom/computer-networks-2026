@@ -1,31 +1,98 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
-<title id="t">Physical media and signals</title><desc id="d">Fiber, twisted pair, coaxial cable, and wireless media carry physical signals with different representations.</desc>
-<g fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M70 545H1130" stroke="#d9e0e4" stroke-width="2"/>
-  <g transform="translate(75 165)">
-    <rect width="250" height="340" rx="28" fill="#f8fbfc" stroke="#d9e0e4"/>
-    <path d="M38 232h70" stroke="#102a3a" stroke-width="34"/>
-    <path d="M95 232c38-45 62-45 100 0s62 45 100 0" stroke="#2f8ee5" stroke-width="8"/>
-    <g stroke="#63c5ef" stroke-width="6"><path d="M95 215l130-78"/><path d="M95 225l145-28"/><path d="M95 239l145 30"/><path d="M95 249l130 78"/></g>
-    <path d="M40 86h38v58h38V86h38v58h38V86h38" stroke="#2f8ee5" stroke-width="7"/>
-    <circle cx="40" cy="86" r="6" fill="#2f8ee5" stroke="none"/>
-  </g>
-  <g transform="translate(350 165)">
-    <rect width="250" height="340" rx="28" fill="#f8fbfc" stroke="#d9e0e4"/>
-    <path d="M38 232c35-28 55 28 90 0s55 28 90 0" stroke="#2f8ee5" stroke-width="13"/><path d="M38 260c35 28 55-28 90 0s55-28 90 0" stroke="#52b98b" stroke-width="13"/>
-    <path d="M30 112c25-35 45-35 70 0s45 35 70 0s45-35 70 0" stroke="#52b98b" stroke-width="7"/>
-    <path d="M30 130c25 35 45 35 70 0s45-35 70 0s45 35 70 0" stroke="#2f8ee5" stroke-width="7"/>
-  </g>
-  <g transform="translate(625 165)">
-    <rect width="250" height="340" rx="28" fill="#f8fbfc" stroke="#d9e0e4"/>
-    <path d="M38 246h72" stroke="#102a3a" stroke-width="44"/><path d="M105 246h56" stroke="#bcc7ce" stroke-width="34"/><path d="M155 246h58" stroke="#f7f9fa" stroke-width="24"/><path d="M205 246h32" stroke="#d98732" stroke-width="10"/>
-    <path d="M28 122c25-48 50 48 75 0s50 48 75 0s50 48 75 0" stroke="#f0a23c" stroke-width="7"/>
-  </g>
-  <g transform="translate(900 165)">
-    <rect width="225" height="340" rx="28" fill="#f8fbfc" stroke="#d9e0e4"/>
-    <rect x="48" y="245" width="130" height="62" rx="18" fill="#eef3f5" stroke="#b8c8d0" stroke-width="3"/>
-    <path d="M65 245v-68M162 245v-68" stroke="#102a3a" stroke-width="10"/>
-    <path d="M83 203c20-28 42-28 62 0M99 220c11-15 21-15 31 0" stroke="#8d6bdc" stroke-width="7"/>
-    <path d="M45 118c30-48 60-48 90 0M66 140c16-27 32-27 48 0" stroke="#8d6bdc" stroke-width="7"/>
-  </g>
-</g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">Physical media and the signals they carry</title>
+<desc id="desc">Four columns compare twisted-pair copper, coaxial cable, optical fiber, and wireless radio. Each column identifies the physical phenomenon, a conceptual signal representation, strengths, limitations, and typical uses.</desc>
+<style>
+text{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;fill:#17324a}.h{font-size:31px;font-weight:780}.m{font-size:21px;font-weight:750}.b{font-size:17px}.s{font-size:14px;fill:#5d7280}.k{font-size:16px;font-weight:720;fill:#0a6675}.w{fill:#fff}
+</style>
+<rect width="1600" height="1000" fill="#fff"/>
+<text x="70" y="65" class="h">Different media carry different physical phenomena</text>
+<text x="70" y="98" class="b">The networking abstraction is “bits,” but the wire, glass, or air carries voltage/current, light, or electromagnetic waves.</text>
+
+<!-- row labels -->
+<g transform="translate(30,155)">
+ <rect width="155" height="735" rx="18" fill="#f2f7f8"/>
+ <text x="18" y="65" class="k">Medium</text>
+ <text x="18" y="210" class="k">What travels</text>
+ <text x="18" y="330" class="k">Conceptual</text><text x="18" y="352" class="k">signal</text>
+ <text x="18" y="485" class="k">Strengths</text>
+ <text x="18" y="615" class="k">Trade-offs</text>
+ <text x="18" y="720" class="k">Typical use</text>
+</g>
+
+<!-- twisted pair -->
+<g transform="translate(205,155)">
+ <rect width="325" height="735" rx="18" fill="#fbfcfd" stroke="#c6d7df" stroke-width="2"/>
+ <rect x="0" y="0" width="325" height="75" rx="18" fill="#e7f3f5"/>
+ <text x="162" y="35" text-anchor="middle" class="m">Twisted-pair copper</text><text x="162" y="58" text-anchor="middle" class="s">common Ethernet cabling</text>
+ <path d="M45 120c35-35 55 35 90 0s55 35 90 0 55 35 55 0" fill="none" stroke="#197bb5" stroke-width="10"/>
+ <path d="M45 142c35 35 55-35 90 0s55-35 90 0 55-35 55 0" fill="none" stroke="#d97824" stroke-width="10"/>
+ <text x="162" y="222" text-anchor="middle" class="b">Electrical changes in copper pairs</text>
+ <path d="M45 300h35v-48h48v48h48v-48h48v48h55" fill="none" stroke="#0f8b8d" stroke-width="6"/>
+ <line x1="45" y1="320" x2="280" y2="320" stroke="#9cb2bc" stroke-width="2"/>
+ <text x="162" y="350" text-anchor="middle" class="s">receiver samples voltage/current patterns</text>
+ <circle cx="50" cy="410" r="6" fill="#0f8b8d"/><text x="68" y="416" class="b">low cost and easy termination</text>
+ <circle cx="50" cy="445" r="6" fill="#0f8b8d"/><text x="68" y="451" class="b">excellent for room/building LANs</text>
+ <circle cx="50" cy="540" r="6" fill="#d97824"/><text x="68" y="546" class="b">attenuation grows with length</text>
+ <circle cx="50" cy="575" r="6" fill="#d97824"/><text x="68" y="581" class="b">susceptible to electromagnetic noise</text>
+ <rect x="45" y="655" width="235" height="54" rx="12" fill="#edf5f7"/><text x="162" y="688" text-anchor="middle" class="b">desktop and campus Ethernet</text>
+</g>
+
+<!-- coax -->
+<g transform="translate(545,155)">
+ <rect width="325" height="735" rx="18" fill="#fbfcfd" stroke="#c6d7df" stroke-width="2"/>
+ <rect x="0" y="0" width="325" height="75" rx="18" fill="#e7f3f5"/>
+ <text x="162" y="35" text-anchor="middle" class="m">Coaxial cable</text><text x="162" y="58" text-anchor="middle" class="s">shielded conductor geometry</text>
+ <rect x="45" y="112" width="175" height="58" rx="29" fill="#203e55"/>
+ <rect x="205" y="119" width="55" height="44" rx="22" fill="#c9d8df"/><rect x="252" y="132" width="45" height="18" rx="9" fill="#c7792b"/>
+ <line x1="62" y1="141" x2="250" y2="141" stroke="#d8eef2" stroke-width="8"/>
+ <text x="162" y="222" text-anchor="middle" class="b">Electrical field around a central conductor</text>
+ <path d="M45 286c22-44 44 44 66 0s44 44 66 0 44 44 66 0 44 44 44 0" fill="none" stroke="#0f8b8d" stroke-width="6"/>
+ <line x1="45" y1="320" x2="280" y2="320" stroke="#9cb2bc" stroke-width="2"/>
+ <text x="162" y="350" text-anchor="middle" class="s">shielding reduces external interference</text>
+ <circle cx="50" cy="410" r="6" fill="#0f8b8d"/><text x="68" y="416" class="b">strong shielding and controlled impedance</text>
+ <circle cx="50" cy="445" r="6" fill="#0f8b8d"/><text x="68" y="451" class="b">useful over longer copper runs</text>
+ <circle cx="50" cy="540" r="6" fill="#d97824"/><text x="68" y="546" class="b">bulkier than twisted pair</text>
+ <circle cx="50" cy="575" r="6" fill="#d97824"/><text x="68" y="581" class="b">shared-medium systems need careful design</text>
+ <rect x="45" y="655" width="235" height="54" rx="12" fill="#edf5f7"/><text x="162" y="678" text-anchor="middle" class="b">cable access, RF distribution,</text><text x="162" y="699" text-anchor="middle" class="b">legacy/shared Ethernet</text>
+</g>
+
+<!-- fiber -->
+<g transform="translate(885,155)">
+ <rect width="325" height="735" rx="18" fill="#fbfcfd" stroke="#c6d7df" stroke-width="2"/>
+ <rect x="0" y="0" width="325" height="75" rx="18" fill="#e7f3f5"/>
+ <text x="162" y="35" text-anchor="middle" class="m">Optical fiber</text><text x="162" y="58" text-anchor="middle" class="s">glass core guides light</text>
+ <rect x="42" y="115" width="170" height="52" rx="26" fill="#173a56"/>
+ <rect x="195" y="123" width="58" height="36" rx="18" fill="#83c9e6"/>
+ <g stroke="#4bb8ee" stroke-width="6"><line x1="250" y1="130" x2="300" y2="110"/><line x1="250" y1="141" x2="305" y2="141"/><line x1="250" y1="152" x2="300" y2="172"/></g>
+ <text x="162" y="222" text-anchor="middle" class="b">Light pulses guided through glass</text>
+ <path d="M45 320h30c8-55 22-55 30 0h45c8-55 22-55 30 0h45c8-55 22-55 30 0h28" fill="none" stroke="#2781b6" stroke-width="6"/>
+ <text x="162" y="350" text-anchor="middle" class="s">optical intensity / phase encodes symbols</text>
+ <circle cx="50" cy="410" r="6" fill="#0f8b8d"/><text x="68" y="416" class="b">very high capacity and long reach</text>
+ <circle cx="50" cy="445" r="6" fill="#0f8b8d"/><text x="68" y="451" class="b">immune to electromagnetic interference</text>
+ <circle cx="50" cy="540" r="6" fill="#d97824"/><text x="68" y="546" class="b">optics/connectors require precision</text>
+ <circle cx="50" cy="575" r="6" fill="#d97824"/><text x="68" y="581" class="b">bending and contamination matter</text>
+ <rect x="45" y="655" width="235" height="54" rx="12" fill="#edf5f7"/><text x="162" y="678" text-anchor="middle" class="b">backbones, data centers,</text><text x="162" y="699" text-anchor="middle" class="b">long-distance access</text>
+</g>
+
+<!-- wireless -->
+<g transform="translate(1225,155)">
+ <rect width="325" height="735" rx="18" fill="#fbfcfd" stroke="#c6d7df" stroke-width="2"/>
+ <rect x="0" y="0" width="325" height="75" rx="18" fill="#e7f3f5"/>
+ <text x="162" y="35" text-anchor="middle" class="m">Wireless radio</text><text x="162" y="58" text-anchor="middle" class="s">shared electromagnetic spectrum</text>
+ <g transform="translate(95,103)" fill="none" stroke="#2781b6" stroke-width="10" stroke-linecap="round"><path d="M0 45c40-45 95-45 135 0"/><path d="M25 70c26-28 60-28 85 0"/><path d="M52 92c10-10 21-10 31 0"/></g>
+ <circle cx="162" cy="205" r="8" fill="#2781b6"/>
+ <text x="162" y="240" text-anchor="middle" class="b">Electromagnetic waves through space</text>
+ <path d="M45 302c16-45 32 45 48 0s32 45 48 0 32 45 48 0 32 45 48 0 32 45 48 0" fill="none" stroke="#0f8b8d" stroke-width="6"/>
+ <line x1="45" y1="320" x2="280" y2="320" stroke="#9cb2bc" stroke-width="2"/>
+ <text x="162" y="350" text-anchor="middle" class="s">amplitude / phase / frequency can encode symbols</text>
+ <circle cx="50" cy="410" r="6" fill="#0f8b8d"/><text x="68" y="416" class="b">mobility and rapid deployment</text>
+ <circle cx="50" cy="445" r="6" fill="#0f8b8d"/><text x="68" y="451" class="b">one transmitter can cover an area</text>
+ <circle cx="50" cy="540" r="6" fill="#d97824"/><text x="68" y="546" class="b">interference and obstacles vary over time</text>
+ <circle cx="50" cy="575" r="6" fill="#d97824"/><text x="68" y="581" class="b">capacity is shared among active users</text>
+ <rect x="45" y="655" width="235" height="54" rx="12" fill="#edf5f7"/><text x="162" y="678" text-anchor="middle" class="b">Wi-Fi, cellular, IoT,</text><text x="162" y="699" text-anchor="middle" class="b">point-to-point radio</text>
+</g>
+
+<rect x="185" y="920" width="1365" height="52" rx="16" fill="#e8f5f6"/>
+<text x="868" y="942" text-anchor="middle" class="k">Same abstraction, different physics</text>
+<text x="868" y="963" text-anchor="middle" class="b">Choose a medium by required reach, capacity, environment, mobility, cost, and reliability—not by one number alone.</text>
+</svg>

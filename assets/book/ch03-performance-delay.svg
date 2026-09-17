@@ -1,10 +1,94 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
-<title id="t">Network delay components</title><desc id="d">A packet experiences processing, queueing, serialization, and propagation delay along a path.</desc>
-<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L9 3 0 6Z" fill="#0a6074"/></marker></defs>
-<g font-family="ui-monospace,monospace" text-anchor="middle">
-  <path d="M115 345H1090" stroke="#0a6074" stroke-width="7" fill="none" marker-end="url(#a)"/>
-  <g transform="translate(80 165)"><rect width="235" height="330" rx="26" fill="#f8fbfc" stroke="#d9e0e4"/><circle cx="118" cy="138" r="62" fill="#dceff4"/><rect x="79" y="109" width="78" height="54" rx="9" fill="#102a3a"/><path d="M100 124h36M100 138h50M100 152h30" stroke="#8cd7df" stroke-width="5" stroke-linecap="round"/><text x="118" y="260" font-size="27" font-weight="700" fill="#102a3a">t_proc</text></g>
-  <g transform="translate(345 165)"><rect width="235" height="330" rx="26" fill="#f8fbfc" stroke="#d9e0e4"/><g fill="#3c8dde"><rect x="42" y="112" width="48" height="48" rx="10"/><rect x="98" y="112" width="48" height="48" rx="10"/><rect x="154" y="112" width="48" height="48" rx="10"/></g><rect x="42" y="190" width="160" height="30" rx="15" fill="#e2e9ed"/><rect x="42" y="190" width="104" height="30" rx="15" fill="#f0a23c"/><text x="118" y="260" font-size="27" font-weight="700" fill="#102a3a">t_queue</text></g>
-  <g transform="translate(610 165)"><rect width="235" height="330" rx="26" fill="#f8fbfc" stroke="#d9e0e4"/><rect x="42" y="116" width="150" height="42" rx="10" fill="#dceff4"/><g fill="#3c8dde"><rect x="52" y="126" width="20" height="22" rx="4"/><rect x="78" y="126" width="20" height="22" rx="4"/><rect x="104" y="126" width="20" height="22" rx="4"/><rect x="130" y="126" width="20" height="22" rx="4"/></g><path d="M42 186h150" stroke="#0a6074" stroke-width="7"/><circle cx="42" cy="186" r="8" fill="#0a6074"/><text x="118" y="260" font-size="27" font-weight="700" fill="#102a3a">L / R</text></g>
-  <g transform="translate(875 165)"><rect width="235" height="330" rx="26" fill="#f8fbfc" stroke="#d9e0e4"/><circle cx="54" cy="138" r="18" fill="#3c8dde"/><circle cx="180" cy="138" r="18" fill="#52b98b"/><path d="M78 138h78" stroke="#8eb7c3" stroke-width="6" stroke-dasharray="9 12"/><path d="M106 99c22 12 22 66 0 78M130 86c39 20 39 86 0 106" stroke="#79b8c8" stroke-width="5" fill="none"/><text x="118" y="260" font-size="27" font-weight="700" fill="#102a3a">d / s</text></g>
-</g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 920" role="img" aria-labelledby="title desc">
+<title id="title">Components of end-to-end network delay</title>
+<desc id="desc">A packet travels from sender through a router and link to a receiver. Four panels distinguish processing delay, queueing delay, transmission delay L over R, and propagation delay d over s, with a final sum for end-to-end delay.</desc>
+<style>
+text{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;fill:#17324a}.h{font-size:31px;font-weight:780}.m{font-size:21px;font-weight:750}.b{font-size:17px}.s{font-size:14px;fill:#5d7280}.w{fill:#fff}.f{font-family:Georgia,serif;font-size:30px;font-style:italic}
+</style>
+<rect width="1600" height="920" fill="#fff"/>
+<text x="70" y="64" class="h">End-to-end delay is not one thing</text>
+<text x="70" y="98" class="b">Different delay components come from different resources, so they respond to different engineering changes.</text>
+<defs><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#2b6e96"/></marker></defs>
+
+<!-- top path -->
+<line x1="210" y1="245" x2="1380" y2="245" stroke="#507a90" stroke-width="6" marker-end="url(#a)"/>
+<g transform="translate(75,165)">
+ <rect width="190" height="135" rx="18" fill="#eef5f7" stroke="#9bb7c2" stroke-width="3"/>
+ <rect x="28" y="22" width="134" height="74" rx="8" fill="#bdd9e5" stroke="#365b72" stroke-width="4"/>
+ <path d="M56 103h78l18 16H38z" fill="#456d84"/>
+ <text x="95" y="-18" text-anchor="middle" class="m">Sender</text>
+</g>
+<g transform="translate(380,205)">
+ <rect width="120" height="72" rx="12" fill="#0f8b8d"/><path d="M20 20h80v32H20z" fill="none" stroke="#bfeae6" stroke-width="4"/>
+ <text x="60" y="96" text-anchor="middle" class="s">packet of L bits</text>
+</g>
+<g transform="translate(650,170)">
+ <ellipse cx="100" cy="55" rx="100" ry="55" fill="#176e9b"/>
+ <path d="M48 55h104M100 17v76M65 35L48 55l17 20M135 35l17 20-17 20" fill="none" stroke="#fff" stroke-width="7"/>
+ <rect x="15" y="118" width="170" height="54" rx="12" fill="#e9f0f3"/>
+ <g fill="#a9bcc6"><rect x="28" y="132" width="26" height="26" rx="4"/><rect x="61" y="132" width="26" height="26" rx="4"/><rect x="94" y="132" width="26" height="26" rx="4"/></g>
+ <rect x="127" y="132" width="44" height="26" rx="4" fill="#0f8b8d"/>
+ <text x="100" y="-18" text-anchor="middle" class="m">Router</text>
+ <text x="100" y="197" text-anchor="middle" class="s">output queue</text>
+</g>
+<g transform="translate(995,205)">
+ <rect width="120" height="72" rx="12" fill="#0f8b8d"/><path d="M20 20h80v32H20z" fill="none" stroke="#bfeae6" stroke-width="4"/>
+ <text x="60" y="-18" text-anchor="middle" class="s">link rate R</text>
+ <text x="60" y="96" text-anchor="middle" class="s">distance d</text>
+</g>
+<g transform="translate(1325,158)">
+ <rect width="150" height="150" rx="16" fill="#153a56"/>
+ <g stroke="#86a6b5"><line x1="22" y1="42" x2="112" y2="42"/><line x1="22" y1="75" x2="112" y2="75"/><line x1="22" y1="108" x2="112" y2="108"/></g>
+ <g fill="#78c9bd"><circle cx="128" cy="42" r="6"/><circle cx="128" cy="75" r="6"/><circle cx="128" cy="108" r="6"/></g>
+ <text x="75" y="-18" text-anchor="middle" class="m">Receiver</text>
+</g>
+
+<!-- four cards -->
+<g transform="translate(45,390)">
+ <g>
+  <rect width="355" height="390" rx="22" fill="#f7fafb" stroke="#c7d8df" stroke-width="2"/>
+  <circle cx="42" cy="42" r="25" fill="#0f8b8d"/><text x="42" y="50" text-anchor="middle" class="m w">1</text>
+  <text x="82" y="50" class="m">Processing delay</text>
+  <text x="28" y="91" class="b">Time to inspect the packet and decide</text><text x="28" y="116" class="b">what should happen next.</text>
+  <rect x="45" y="160" width="100" height="65" rx="12" fill="#dcebf0"/><path d="M68 182h54M68 202h35" stroke="#5c7b8d" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="180" cy="205" r="28" fill="none" stroke="#176e9b" stroke-width="7"/><line x1="201" y1="226" x2="225" y2="250" stroke="#176e9b" stroke-width="7"/>
+  <text x="28" y="295" class="s">Examples: header parsing, checksum work,</text><text x="28" y="318" class="s">route lookup, software/hardware pipeline time.</text>
+  <rect x="28" y="340" width="299" height="34" rx="10" fill="#e9f3f5"/><text x="177" y="363" text-anchor="middle" class="s">Usually small, but device-dependent</text>
+ </g>
+ <g transform="translate(385,0)">
+  <rect width="355" height="390" rx="22" fill="#f7fafb" stroke="#c7d8df" stroke-width="2"/>
+  <circle cx="42" cy="42" r="25" fill="#0f8b8d"/><text x="42" y="50" text-anchor="middle" class="m w">2</text>
+  <text x="82" y="50" class="m">Queueing delay</text>
+  <text x="28" y="91" class="b">Time waiting for earlier traffic to leave</text><text x="28" y="116" class="b">the same output resource.</text>
+  <g transform="translate(42,175)"><rect width="58" height="44" rx="8" fill="#a9bcc6"/><rect x="68" width="58" height="44" rx="8" fill="#a9bcc6"/><rect x="136" width="58" height="44" rx="8" fill="#a9bcc6"/><rect x="204" width="72" height="44" rx="8" fill="#0f8b8d"/></g>
+  <line x1="42" y1="235" x2="318" y2="235" stroke="#587a8c" stroke-width="3"/>
+  <text x="28" y="295" class="s">Depends on offered load, burstiness,</text><text x="28" y="318" class="s">scheduler behavior, and buffer occupancy.</text>
+  <rect x="28" y="340" width="299" height="34" rx="10" fill="#fff1e6"/><text x="177" y="363" text-anchor="middle" class="s">Can vary from ~0 to very large</text>
+ </g>
+ <g transform="translate(770,0)">
+  <rect width="355" height="390" rx="22" fill="#f7fafb" stroke="#c7d8df" stroke-width="2"/>
+  <circle cx="42" cy="42" r="25" fill="#0f8b8d"/><text x="42" y="50" text-anchor="middle" class="m w">3</text>
+  <text x="82" y="50" class="m">Transmission delay</text>
+  <text x="28" y="91" class="b">Time to place all L packet bits onto a</text><text x="28" y="116" class="b">link that transmits at R bits/s.</text>
+  <rect x="44" y="173" width="76" height="48" rx="8" fill="#0f8b8d"/><line x1="120" y1="197" x2="300" y2="197" stroke="#2b6e96" stroke-width="5" marker-end="url(#a)"/>
+  <text x="178" y="251" text-anchor="middle" class="s">serialization onto the link</text>
+  <text x="178" y="308" text-anchor="middle" class="f">D<tspan baseline-shift="sub" font-size="18">tx</tspan> = L / R</text>
+  <rect x="28" y="340" width="299" height="34" rx="10" fill="#e9f3f5"/><text x="177" y="363" text-anchor="middle" class="s">Packet size and link rate matter</text>
+ </g>
+ <g transform="translate(1155,0)">
+  <rect width="355" height="390" rx="22" fill="#f7fafb" stroke="#c7d8df" stroke-width="2"/>
+  <circle cx="42" cy="42" r="25" fill="#0f8b8d"/><text x="42" y="50" text-anchor="middle" class="m w">4</text>
+  <text x="82" y="50" class="m">Propagation delay</text>
+  <text x="28" y="91" class="b">Time for a signal to travel distance d</text><text x="28" y="116" class="b">through the physical medium at speed s.</text>
+  <line x1="48" y1="195" x2="302" y2="195" stroke="#2b6e96" stroke-width="5" marker-end="url(#a)"/><rect x="145" y="172" width="60" height="46" rx="8" fill="#0f8b8d"/>
+  <line x1="48" y1="235" x2="302" y2="235" stroke="#7f98a5" stroke-width="2"/><line x1="48" y1="226" x2="48" y2="244" stroke="#7f98a5" stroke-width="2"/><line x1="302" y1="226" x2="302" y2="244" stroke="#7f98a5" stroke-width="2"/>
+  <text x="175" y="260" text-anchor="middle" class="s">distance d</text>
+  <text x="178" y="308" text-anchor="middle" class="f">D<tspan baseline-shift="sub" font-size="18">prop</tspan> = d / s</text>
+  <rect x="28" y="340" width="299" height="34" rx="10" fill="#e9f3f5"/><text x="177" y="363" text-anchor="middle" class="s">Distance and medium matter</text>
+ </g>
+</g>
+
+<rect x="70" y="825" width="1460" height="62" rx="18" fill="#e7f4f5"/>
+<text x="105" y="850" class="m">At one hop:</text>
+<text x="340" y="862" class="f">D<tspan baseline-shift="sub" font-size="18">hop</tspan> = D<tspan baseline-shift="sub" font-size="18">proc</tspan> + D<tspan baseline-shift="sub" font-size="18">queue</tspan> + D<tspan baseline-shift="sub" font-size="18">tx</tspan> + D<tspan baseline-shift="sub" font-size="18">prop</tspan></text>
+<text x="975" y="850" class="m">End to end:</text><text x="975" y="878" class="b">sum the relevant contributions over every hop and endpoint.</text>
+</svg>

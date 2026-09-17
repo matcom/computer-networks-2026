@@ -1,11 +1,82 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
-<title id="t">Networking learning path</title><desc id="d">A staircase from physical media through Ethernet, IP, transport, applications, and measurement to professional mastery.</desc>
-<g font-family="ui-sans-serif,system-ui,sans-serif" text-anchor="middle">
-  <path d="M95 535C230 500 270 450 365 420S520 340 610 330 755 245 845 235 970 155 1080 125" stroke="#b7dbe3" stroke-width="28" fill="none" stroke-linecap="round"/>
-  <g fill="#f8fbfc" stroke="#b8c8d0" stroke-width="3">
-    <circle cx="115" cy="530" r="58"/><circle cx="300" cy="450" r="58"/><circle cx="485" cy="365" r="58"/><circle cx="670" cy="285" r="58"/><circle cx="855" cy="205" r="58"/><circle cx="1035" cy="130" r="58"/>
-  </g>
-  <g fill="#102a3a" font-size="23" font-weight="800"><text x="115" y="538">PHY</text><text x="300" y="458">ETH</text><text x="485" y="373">IP</text><text x="670" y="293">TCP</text><text x="855" y="213">APP</text><text x="1035" y="138">OBS</text></g>
-  <g stroke="#0a6074" stroke-width="7" fill="none" stroke-linecap="round"><path d="M70 605h90"/><path d="M255 525h90"/><path d="M440 440h90"/><path d="M625 360h90"/><path d="M810 280h90"/></g>
-  <g transform="translate(1015 35)"><path d="M0 0v-55" stroke="#0a6074" stroke-width="8"/><path d="M0-55l72 17-72 22Z" fill="#3c8dde"/></g>
-</g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Part I networking learning paths</title>
+<desc id="desc">A shared sequence from Workbench through Internet Architecture, Physical Layer, Network Performance, and Ethernet and Local Networks branches into four professional lenses: White Hat Security, Sysadmin and Operations, Software Engineering, and Networking Research.</desc>
+<style>
+text{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;fill:#17324a}.h{font-size:31px;font-weight:780}.m{font-size:19px;font-weight:750}.b{font-size:16px}.s{font-size:13px;fill:#5d7280}.w{fill:#fff}
+</style>
+<rect width="1600" height="900" fill="#fff"/>
+<text x="70" y="65" class="h">One Part I foundation, four professional lenses</text>
+<text x="70" y="98" class="b">Everyone studies the same mechanisms. A learning path changes which questions, evidence sources, and optional challenges you emphasize.</text>
+<defs><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#527d91"/></marker></defs>
+
+<!-- common foundation -->
+<text x="70" y="158" class="m">Shared sequence</text>
+<line x1="110" y1="330" x2="1010" y2="330" stroke="#527d91" stroke-width="5" marker-end="url(#a)"/>
+<g transform="translate(65,195)">
+ <rect width="175" height="230" rx="20" fill="#f4f8f9" stroke="#c6d7df" stroke-width="2"/>
+ <rect x="40" y="36" width="95" height="62" rx="8" fill="#153a56"/><text x="87" y="75" text-anchor="middle" class="m w">&gt;_</text><path d="M59 103h57l15 13H44z" fill="#537d99"/>
+ <circle cx="87" cy="158" r="22" fill="#0f8b8d"/><text x="87" y="165" text-anchor="middle" class="m w">0</text>
+ <text x="87" y="196" text-anchor="middle" class="m">Workbench</text><text x="87" y="217" text-anchor="middle" class="s">evidence • tools • baseline</text>
+</g>
+<g transform="translate(260,195)">
+ <rect width="175" height="230" rx="20" fill="#f4f8f9" stroke="#c6d7df" stroke-width="2"/>
+ <circle cx="87" cy="66" r="48" fill="#dbeaf0" stroke="#2b6e96" stroke-width="4"/><path d="M42 66h90M87 18c-24 24-24 72 0 96M87 18c24 24 24 72 0 96" fill="none" stroke="#2b6e96" stroke-width="3"/>
+ <circle cx="87" cy="158" r="22" fill="#0f8b8d"/><text x="87" y="165" text-anchor="middle" class="m w">1</text>
+ <text x="87" y="196" text-anchor="middle" class="m">Internet</text><text x="87" y="217" text-anchor="middle" class="s">layers • endpoints • routers</text>
+</g>
+<g transform="translate(455,195)">
+ <rect width="175" height="230" rx="20" fill="#f4f8f9" stroke="#c6d7df" stroke-width="2"/>
+ <path d="M35 70c20-30 35 30 55 0s35 30 55 0" fill="none" stroke="#0f8b8d" stroke-width="8"/><path d="M35 95c20 30 35-30 55 0s35-30 55 0" fill="none" stroke="#d97824" stroke-width="8"/>
+ <circle cx="87" cy="158" r="22" fill="#0f8b8d"/><text x="87" y="165" text-anchor="middle" class="m w">2</text>
+ <text x="87" y="196" text-anchor="middle" class="m">Physical layer</text><text x="87" y="217" text-anchor="middle" class="s">signals • media • limits</text>
+</g>
+<g transform="translate(650,195)">
+ <rect width="175" height="230" rx="20" fill="#f4f8f9" stroke="#c6d7df" stroke-width="2"/>
+ <path d="M38 102a50 50 0 0 1 99 0" fill="none" stroke="#2b6e96" stroke-width="10"/><line x1="87" y1="102" x2="120" y2="63" stroke="#d97824" stroke-width="7" stroke-linecap="round"/><circle cx="87" cy="102" r="8" fill="#17324a"/>
+ <circle cx="87" cy="158" r="22" fill="#0f8b8d"/><text x="87" y="165" text-anchor="middle" class="m w">3</text>
+ <text x="87" y="196" text-anchor="middle" class="m">Performance</text><text x="87" y="217" text-anchor="middle" class="s">delay • rate • queueing</text>
+</g>
+<g transform="translate(845,195)">
+ <rect width="175" height="230" rx="20" fill="#f4f8f9" stroke="#c6d7df" stroke-width="2"/>
+ <rect x="35" y="56" width="105" height="62" rx="12" fill="#153a56"/><g fill="#d8eef2"><rect x="48" y="75" width="16" height="16"/><rect x="69" y="75" width="16" height="16"/><rect x="90" y="75" width="16" height="16"/><rect x="111" y="75" width="16" height="16"/></g>
+ <circle cx="87" cy="158" r="22" fill="#0f8b8d"/><text x="87" y="165" text-anchor="middle" class="m w">4</text>
+ <text x="87" y="196" text-anchor="middle" class="m">Ethernet / LANs</text><text x="87" y="217" text-anchor="middle" class="s">MAC • switching • ARP</text>
+</g>
+
+<!-- branch -->
+<line x1="1030" y1="330" x2="1125" y2="330" stroke="#527d91" stroke-width="5"/>
+<line x1="1125" y1="220" x2="1125" y2="650" stroke="#527d91" stroke-width="5"/>
+<text x="1125" y="185" text-anchor="middle" class="m">Choose a lens</text>
+
+<g transform="translate(1170,165)">
+ <rect width="360" height="125" rx="18" fill="#e6f5f2" stroke="#aed8d0" stroke-width="2"/>
+ <circle cx="55" cy="58" r="30" fill="#0f8b8d"/><path d="M55 36l18 8v15c0 17-10 27-18 32-8-5-18-15-18-32V44z" fill="none" stroke="#fff" stroke-width="4"/>
+ <text x="105" y="40" class="m">White Hat Security</text><text x="105" y="68" class="b">Normal state first: what evidence would</text><text x="105" y="90" class="b">show spoofing, exposure, or interference?</text>
+</g>
+<line x1="1125" y1="228" x2="1170" y2="228" stroke="#527d91" stroke-width="4" marker-end="url(#a)"/>
+
+<g transform="translate(1170,315)">
+ <rect width="360" height="125" rx="18" fill="#e9f2f8" stroke="#bfd1df" stroke-width="2"/>
+ <circle cx="55" cy="58" r="30" fill="#2b6e96"/><path d="M40 58h30M55 43v30M45 48l20 20M65 48L45 68" stroke="#fff" stroke-width="4"/>
+ <text x="105" y="40" class="m">Sysadmin &amp; Operations</text><text x="105" y="68" class="b">Build baselines, isolate boundaries, and</text><text x="105" y="90" class="b">separate link, host, path, and load failures.</text>
+</g>
+<line x1="1125" y1="378" x2="1170" y2="378" stroke="#527d91" stroke-width="4" marker-end="url(#a)"/>
+
+<g transform="translate(1170,465)">
+ <rect width="360" height="125" rx="18" fill="#f2eff9" stroke="#d5cce8" stroke-width="2"/>
+ <circle cx="55" cy="58" r="30" fill="#66569b"/><text x="55" y="66" text-anchor="middle" class="m w">&lt;/&gt;</text>
+ <text x="105" y="40" class="m">Software Engineer</text><text x="105" y="68" class="b">Connect application symptoms to endpoint,</text><text x="105" y="90" class="b">local-link, and performance constraints.</text>
+</g>
+<line x1="1125" y1="528" x2="1170" y2="528" stroke="#527d91" stroke-width="4" marker-end="url(#a)"/>
+
+<g transform="translate(1170,615)">
+ <rect width="360" height="125" rx="18" fill="#fff4e9" stroke="#ead2b8" stroke-width="2"/>
+ <circle cx="55" cy="58" r="30" fill="#d97824"/><path d="M38 68h10l8-28 9 45 8-25h11" fill="none" stroke="#fff" stroke-width="4"/>
+ <text x="105" y="40" class="m">Networking Research</text><text x="105" y="68" class="b">Turn assumptions into controlled variables,</text><text x="105" y="90" class="b">measure evidence, and challenge the model.</text>
+</g>
+<line x1="1125" y1="678" x2="1170" y2="678" stroke="#527d91" stroke-width="4" marker-end="url(#a)"/>
+
+<rect x="80" y="785" width="1450" height="65" rx="18" fill="#e8f5f6"/>
+<text x="800" y="812" text-anchor="middle" class="m">The chapter order does not change</text>
+<text x="800" y="838" text-anchor="middle" class="b">Paths only highlight different questions, tools, and optional exercises within the same Workbench + Part I foundation.</text>
+</svg>
