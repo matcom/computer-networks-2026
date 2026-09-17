@@ -1,4 +1,4 @@
-name: Deploy course website
+name: Deploy static course
 
 on:
   push:
@@ -15,42 +15,34 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v6
-
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build Astro site
-        env:
-          SITE_URL: https://${{ github.repository_owner }}.github.io
-          SITE_BASE: /${{ github.event.repository.name }}/
-        run: npm run build
-
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload site artifact
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: dist
-
   deploy:
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
     steps:
-      - name: Deploy GitHub Pages
+      - uses: actions/checkout@v4
+      - name: Stage only generated release files
+        shell: python
+        run: |
+          import hashlib, json, pathlib, shutil
+          root = pathlib.Path.cwd()
+          target = root / '_pages'
+          target.mkdir()
+          files = json.loads((root / '.release-files.json').read_text())['files']
+          for name, expected in files.items():
+              if name.startswith('.') and name != '.nojekyll':
+                  continue
+              source = (root / name).resolve()
+              assert source.is_relative_to(root) and not source.is_symlink(), name
+              assert hashlib.sha256(source.read_bytes()).hexdigest() == expected, name
+              destination = target / name
+              destination.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copy2(source, destination)
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _pages
+      - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4

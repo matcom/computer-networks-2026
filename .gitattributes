@@ -1,0 +1,2 @@
+# Generated artifacts must retain the exact bytes verified by the release build.
+* -text
