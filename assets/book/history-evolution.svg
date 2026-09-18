@@ -1,8 +1,123 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc"><title id="title">Evolution of networking ideas relevant to Part I</title><desc id="desc">An alternating timeline of major networking milestones and the ideas inherited by Part I.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Evolution of networking ideas relevant to Part I</title>
+<desc id="desc">Eight evenly aligned milestones trace telegraphy, telephony, packet switching, ARPANET, Ethernet, TCP/IP, DNS and wireless LANs. A lower row summarizes the four enduring ideas inherited by Part I.</desc>
 <style>
-text{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;fill:#17324a}
-.title{font-size:36px;font-weight:750}.subtitle{font-size:18px;fill:#5c7180}.section{font-size:22px;font-weight:720}
-.label{font-size:18px;font-weight:700}.body{font-size:15px}.small{font-size:13px;fill:#5c7180}.tiny{font-size:12px;fill:#5c7180}
-.mono{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:13px}.white{fill:#fff}.teal{fill:#0f7f82}.blue{fill:#2b6e96}.orange{fill:#c96b1b}
-.card{fill:#f8fbfc;stroke:#c6d7df;stroke-width:2}.soft{fill:#edf5f7}.navy{fill:#173a56}.rule{stroke:#8fa9b6;stroke-width:3}.thin{stroke:#9db2bc;stroke-width:2}
-</style><rect width="1600" height="900" fill="#fff"/><text x="64" y="62" class="title">How the ideas in Part I emerged</text><text x="64" y="94" class="subtitle">Each milestone solved a different sharing, distance, naming, or mobility problem; modern networks combine the results.</text><line x1="90" y1="355" x2="1510" y2="355" stroke="#6f8fa0" stroke-width="5"/><circle cx="115" cy="355" r="10" fill="#0f7f82"/><line x1="115" y1="345" x2="115" y2="295" stroke="#9db2bc" stroke-width="3"/><rect x="27" y="155" width="176" height="132" rx="18" fill="#f8fbfc" stroke="#c6d7df" stroke-width="2"/><text x="115" y="185" class="label teal" text-anchor="middle">1840s+</text><text x="115" y="216" class="label" text-anchor="middle">Telegraphy</text><text x="115" y="246" class="small" text-anchor="middle">coded electrical signals</text><circle cx="310" cy="355" r="10" fill="#0f7f82"/><line x1="310" y1="365" x2="310" y2="410" stroke="#9db2bc" stroke-width="3"/><rect x="222" y="410" width="176" height="132" rx="18" fill="#f8fbfc" stroke="#c6d7df" stroke-width="2"/><text x="310" y="440" class="label teal" text-anchor="middle">1870s+</text><text x="310" y="471" class="label" text-anchor="middle">Telephony</text><text x="310" y="501" class="small" text-anchor="middle">reserved circuits for voice</text><circle cx="505" cy="355" r="10" fill="#0f7f82"/><line x1="505" y1="345" x2="505" y2="295" stroke="#9db2bc" stroke-width="3"/><rect x="417" y="155" width="176" height="132" rx="18" fill="#f8fbfc" stroke="#c6d7df" stroke-width="2"/><text x="505" y="185" class="label teal" text-anchor="middle">1960s</text><text x="505" y="216" class="label" text-anchor="middle">Packet switching</text><text x="505" y="246" class="small" text-anchor="middle">bursty data shares links</text><circle cx="700" cy="355" r="10" fill="#0f7f82"/><line x1="700" y1="365" x2="700" y2="410" stroke="#9db2bc" stroke-width="3"/><rect x="612" y="410" width="176" height="132" rx="18" fill="#f8fbfc" stroke="#c6d7df" stroke-width="2"/><text x="700" y="440" class="label teal" text-anchor="middle">1969</text><text x="700" y="471" class="label" text-anchor="middle">ARPANET</text><text x="700" y="501" class="small" text-anchor="middle">operational packet network</text><circle cx="895" cy="355" r="10" fill="#0f7f82"/><line x1="895" y1="345" x2="895" y2="295" stroke="#9db2bc" stroke-width="3"/><rect x="807" y="155" width="176" height="132" rx="18" fill="#f8fbfc" stroke="#c6d7df" stroke-width="2"/><text x="895" y="185" class="label teal" text-anchor="middle">1973+</text><text x="895" y="216" class="label" text-anchor="middle">Ethernet</text><text x="895" y="246" class="small" text-anchor="middle">shared local medium</text><circle cx="1090" cy="355" r="10" fill="#0f7f82"/><line x1="1090" y1="365" x2="1090" y2="410" stroke="#9db2bc" stroke-width="3"/><rect x="1002" y="410" width="176" height="132" rx="18" fill="#f8fbfc" stroke="#c6d7df" stroke-width="2"/><text x="1090" y="440" class="label teal" text-anchor="middle">1983</text><text x="1090" y="471" class="label" text-anchor="middle">TCP/IP</text><text x="1090" y="501" class="small" text-anchor="middle">common internetworking</text><circle cx="1285" cy="355" r="10" fill="#0f7f82"/><line x1="1285" y1="345" x2="1285" y2="295" stroke="#9db2bc" stroke-width="3"/><rect x="1197" y="155" width="176" height="132" rx="18" fill="#f8fbfc" stroke="#c6d7df" stroke-width="2"/><text x="1285" y="185" class="label teal" text-anchor="middle">1984</text><text x="1285" y="216" class="label" text-anchor="middle">DNS</text><text x="1285" y="246" class="small" text-anchor="middle">distributed naming</text><circle cx="1480" cy="355" r="10" fill="#0f7f82"/><line x1="1480" y1="365" x2="1480" y2="410" stroke="#9db2bc" stroke-width="3"/><rect x="1392" y="410" width="176" height="132" rx="18" fill="#f8fbfc" stroke="#c6d7df" stroke-width="2"/><text x="1480" y="440" class="label teal" text-anchor="middle">1997+</text><text x="1480" y="471" class="label" text-anchor="middle">Wireless LANs</text><text x="1480" y="501" class="small" text-anchor="middle">shared radio + mobility</text><text x="64" y="625" class="section">What Part I inherits</text><rect x="64" y="660" width="350" height="130" rx="18" fill="#eef6f7" stroke="#c6d7df" stroke-width="2"/><text x="86" y="695" class="label">Physical limits</text><text x="86" y="725" class="body">signals attenuate, propagate,</text><text x="86" y="750" class="body">and compete with noise</text><rect x="438" y="660" width="350" height="130" rx="18" fill="#eef6f7" stroke="#c6d7df" stroke-width="2"/><text x="460" y="695" class="label">Packet sharing</text><text x="460" y="725" class="body">efficiency introduces contention</text><text x="460" y="750" class="body">and queueing</text><rect x="812" y="660" width="350" height="130" rx="18" fill="#eef6f7" stroke="#c6d7df" stroke-width="2"/><text x="834" y="695" class="label">Layered internetworking</text><text x="834" y="725" class="body">different local links can carry one IP abstraction</text><rect x="1186" y="660" width="350" height="130" rx="18" fill="#eef6f7" stroke="#c6d7df" stroke-width="2"/><text x="1208" y="695" class="label">Local learning</text><text x="1208" y="725" class="body">LAN devices learn identities</text><text x="1208" y="750" class="body">and forwarding state</text><text x="800" y="842" class="small" text-anchor="middle">Dates mark widely recognized milestones; each technology continued evolving after the date shown.</text></svg>
+  text{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;fill:#183247}
+  .title{font-size:34px;font-weight:760}.subtitle{font-size:18px;fill:#587181}
+  .head{font-size:18px;font-weight:760}.year{font-size:16px;font-weight:760;fill:#0a6675}
+  .body{font-size:15px}.small{font-size:13px;fill:#587181}
+</style>
+<rect width="1600" height="900" fill="#fff"/>
+<text x="80" y="64" class="title">Networking evolved by solving different sharing and communication problems</text>
+<text x="80" y="98" class="subtitle">The mechanisms in Part I make more sense when placed in the historical sequence that motivated them.</text>
+
+<!-- central timeline -->
+<line x1="125" y1="355" x2="1475" y2="355" stroke="#6f92a4" stroke-width="5"/>
+<g fill="#0f8b8d">
+  <circle cx="175" cy="355" r="9"/><circle cx="355" cy="355" r="9"/><circle cx="535" cy="355" r="9"/><circle cx="715" cy="355" r="9"/>
+  <circle cx="895" cy="355" r="9"/><circle cx="1075" cy="355" r="9"/><circle cx="1255" cy="355" r="9"/><circle cx="1435" cy="355" r="9"/>
+</g>
+
+<!-- top four -->
+<g transform="translate(90,145)">
+  <rect width="170" height="150" rx="18" fill="#f6f9fa" stroke="#d0dee4"/>
+  <path d="M38 88h94M62 88V52M108 88V62M55 52h14M101 62h14" stroke="#183247" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="62" cy="42" r="8" fill="#0f8b8d"/><circle cx="108" cy="52" r="8" fill="#0f8b8d"/>
+  <text x="85" y="120" text-anchor="middle" class="head">Telegraphy</text>
+  <text x="85" y="143" text-anchor="middle" class="year">1840s+</text>
+  <line x1="85" y1="150" x2="85" y2="210" stroke="#a8bcc5" stroke-width="2"/>
+  <text x="85" y="245" text-anchor="middle" class="small">coded electrical signals</text>
+</g>
+<g transform="translate(270,145)">
+  <rect width="170" height="150" rx="18" fill="#f6f9fa" stroke="#d0dee4"/>
+  <path d="M48 48c21 38 39 49 66 58l18-24-28-16-13 13c-11-7-19-16-26-27l12-12-15-28z" fill="#2b6e96"/>
+  <text x="85" y="120" text-anchor="middle" class="head">Telephone</text>
+  <text x="85" y="143" text-anchor="middle" class="year">1870s+</text>
+  <line x1="85" y1="150" x2="85" y2="210" stroke="#a8bcc5" stroke-width="2"/>
+  <text x="85" y="245" text-anchor="middle" class="small">dedicated circuits</text>
+</g>
+<g transform="translate(450,145)">
+  <rect width="170" height="150" rx="18" fill="#f6f9fa" stroke="#d0dee4"/>
+  <g fill="#0f8b8d"><rect x="30" y="40" width="36" height="26" rx="5"/><rect x="72" y="40" width="36" height="26" rx="5"/><rect x="114" y="40" width="26" height="26" rx="5"/><rect x="30" y="73" width="36" height="26" rx="5"/><rect x="72" y="73" width="36" height="26" rx="5"/></g>
+  <text x="85" y="120" text-anchor="middle" class="head">Packet switching</text>
+  <text x="85" y="143" text-anchor="middle" class="year">1960s</text>
+  <line x1="85" y1="150" x2="85" y2="210" stroke="#a8bcc5" stroke-width="2"/>
+  <text x="85" y="245" text-anchor="middle" class="small">bursty data shares links</text>
+</g>
+<g transform="translate(630,145)">
+  <rect width="170" height="150" rx="18" fill="#f6f9fa" stroke="#d0dee4"/>
+  <g stroke="#2b6e96" stroke-width="5"><line x1="85" y1="40" x2="48" y2="88"/><line x1="85" y1="40" x2="122" y2="88"/><line x1="48" y1="88" x2="122" y2="88"/></g>
+  <g fill="#183247"><rect x="68" y="24" width="34" height="28" rx="4"/><rect x="31" y="76" width="34" height="28" rx="4"/><rect x="105" y="76" width="34" height="28" rx="4"/></g>
+  <text x="85" y="120" text-anchor="middle" class="head">ARPANET</text>
+  <text x="85" y="143" text-anchor="middle" class="year">1969</text>
+  <line x1="85" y1="150" x2="85" y2="210" stroke="#a8bcc5" stroke-width="2"/>
+  <text x="85" y="245" text-anchor="middle" class="small">operational packet network</text>
+</g>
+
+<!-- bottom four -->
+<g transform="translate(810,415)">
+  <line x1="85" y1="-60" x2="85" y2="0" stroke="#a8bcc5" stroke-width="2"/>
+  <rect width="170" height="150" rx="18" fill="#f6f9fa" stroke="#d0dee4"/>
+  <rect x="35" y="38" width="100" height="45" rx="9" fill="#183247"/>
+  <g fill="#d8eef2"><rect x="48" y="51" width="15" height="15"/><rect x="70" y="51" width="15" height="15"/><rect x="92" y="51" width="15" height="15"/><rect x="114" y="51" width="15" height="15"/></g>
+  <text x="85" y="112" text-anchor="middle" class="head">Ethernet</text>
+  <text x="85" y="136" text-anchor="middle" class="year">1973+</text>
+  <text x="85" y="182" text-anchor="middle" class="small">shared local medium</text>
+</g>
+<g transform="translate(990,415)">
+  <line x1="85" y1="-60" x2="85" y2="0" stroke="#a8bcc5" stroke-width="2"/>
+  <rect width="170" height="150" rx="18" fill="#f6f9fa" stroke="#d0dee4"/>
+  <rect x="48" y="28" width="74" height="66" rx="8" fill="#fff" stroke="#2b6e96" stroke-width="3"/>
+  <path d="M60 46h50M60 62h50M60 78h30" stroke="#0f8b8d" stroke-width="4"/>
+  <text x="85" y="112" text-anchor="middle" class="head">TCP/IP</text>
+  <text x="85" y="136" text-anchor="middle" class="year">1983</text>
+  <text x="85" y="182" text-anchor="middle" class="small">common internetwork layer</text>
+</g>
+<g transform="translate(1170,415)">
+  <line x1="85" y1="-60" x2="85" y2="0" stroke="#a8bcc5" stroke-width="2"/>
+  <rect width="170" height="150" rx="18" fill="#f6f9fa" stroke="#d0dee4"/>
+  <g fill="#183247"><rect x="40" y="28" width="90" height="22" rx="5"/><rect x="40" y="56" width="90" height="22" rx="5"/></g>
+  <circle cx="85" cy="94" r="16" fill="none" stroke="#2b6e96" stroke-width="3"/>
+  <path d="M69 94h32M85 78c-5 8-5 24 0 32M85 78c5 8 5 24 0 32" fill="none" stroke="#2b6e96" stroke-width="2"/>
+  <text x="85" y="126" text-anchor="middle" class="head">DNS</text>
+  <text x="85" y="148" text-anchor="middle" class="year">1984</text>
+  <text x="85" y="182" text-anchor="middle" class="small">distributed naming</text>
+</g>
+<g transform="translate(1350,415)">
+  <line x1="85" y1="-60" x2="85" y2="0" stroke="#a8bcc5" stroke-width="2"/>
+  <rect width="170" height="150" rx="18" fill="#f6f9fa" stroke="#d0dee4"/>
+  <g fill="none" stroke="#2781b6" stroke-width="8" stroke-linecap="round"><path d="M35 62c27-31 73-31 100 0"/><path d="M58 84c15-18 39-18 54 0"/></g>
+  <circle cx="85" cy="100" r="6" fill="#2781b6"/>
+  <text x="85" y="126" text-anchor="middle" class="head">Wireless LANs</text>
+  <text x="85" y="148" text-anchor="middle" class="year">1997+</text>
+  <text x="85" y="182" text-anchor="middle" class="small">mobility on shared radio</text>
+</g>
+
+<!-- inherited ideas -->
+<text x="80" y="650" class="head">What Part I inherits from this history</text>
+<g transform="translate(80,685)">
+  <rect width="340" height="130" rx="18" fill="#eaf4f6"/>
+  <text x="24" y="36" class="head">Physical limits</text>
+  <text x="24" y="67" class="body">Signals attenuate, propagate, and</text>
+  <text x="24" y="92" class="body">compete with noise regardless of protocol.</text>
+</g>
+<g transform="translate(450,685)">
+  <rect width="340" height="130" rx="18" fill="#eaf4f6"/>
+  <text x="24" y="36" class="head">Packet sharing</text>
+  <text x="24" y="67" class="body">Bursty traffic shares links efficiently,</text>
+  <text x="24" y="92" class="body">but queues and contention appear.</text>
+</g>
+<g transform="translate(820,685)">
+  <rect width="340" height="130" rx="18" fill="#eaf4f6"/>
+  <text x="24" y="36" class="head">Layered internetworking</text>
+  <text x="24" y="67" class="body">Different local technologies can carry</text>
+  <text x="24" y="92" class="body">a common packet abstraction.</text>
+</g>
+<g transform="translate(1190,685)">
+  <rect width="330" height="130" rx="18" fill="#eaf4f6"/>
+  <text x="24" y="36" class="head">Local learning</text>
+  <text x="24" y="67" class="body">LAN devices learn forwarding state</text>
+  <text x="24" y="92" class="body">from local observations.</text>
+</g>
+<text x="800" y="858" text-anchor="middle" class="small">Milestone dates are approximate reference points; each technology continued evolving after its first deployment.</text>
+</svg>

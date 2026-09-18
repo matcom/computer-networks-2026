@@ -1,8 +1,136 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc"><title id="title">Internet architecture and protocol layers</title><desc id="desc">A client-to-server path and a matrix showing which protocol layers each device uses.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 940" role="img" aria-labelledby="title desc">
+<title id="title">Internet architecture and protocol layers</title>
+<desc id="desc">A client sends an HTTP request through a local LAN, switch, gateway router, Internet core, destination router, and server. A lower table shows which protocol layers each type of device uses for its forwarding job.</desc>
 <style>
-text{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;fill:#17324a}
-.title{font-size:36px;font-weight:750}.subtitle{font-size:18px;fill:#5c7180}.section{font-size:22px;font-weight:720}
-.label{font-size:18px;font-weight:700}.body{font-size:15px}.small{font-size:13px;fill:#5c7180}.tiny{font-size:12px;fill:#5c7180}
-.mono{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:13px}.white{fill:#fff}.teal{fill:#0f7f82}.blue{fill:#2b6e96}.orange{fill:#c96b1b}
-.card{fill:#f8fbfc;stroke:#c6d7df;stroke-width:2}.soft{fill:#edf5f7}.navy{fill:#173a56}.rule{stroke:#8fa9b6;stroke-width:3}.thin{stroke:#9db2bc;stroke-width:2}
-</style><rect width="1600" height="1000" fill="#fff"/><defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#0f7f82"/></marker><marker id="arr2" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#c96b1b"/></marker></defs><text x="64" y="62" class="title">Internet architecture: one request, several forwarding domains</text><text x="64" y="94" class="subtitle">Endpoints create application and transport state; switches forward local frames; routers forward IP packets between networks.</text><line x1="130" y1="135" x2="1470" y2="135" stroke="#0f7f82" stroke-width="4" marker-end="url(#arr)"/><text x="800" y="126" class="label teal" text-anchor="middle">HTTP request →</text><line x1="1470" y1="170" x2="130" y2="170" stroke="#c96b1b" stroke-width="3" marker-end="url(#arr2)"/><text x="800" y="194" class="body orange" text-anchor="middle">← HTTP response</text><rect x="60" y="225" width="196" height="150" rx="18" fill="#f6fafb" stroke="#c6d7df" stroke-width="2"/><text x="158.0" y="259" class="label" text-anchor="middle">Client</text><rect x="118" y="275" width="80" height="52" rx="8" fill="#dcebf0" stroke="#6f8fa0" stroke-width="2"/><text x="158.0" y="353" class="small" text-anchor="middle">Browser</text><line x1="256" y1="300" x2="272" y2="300" stroke="#789aaa" stroke-width="3" marker-end="url(#arr)"/><rect x="274" y="225" width="196" height="150" rx="18" fill="#f6fafb" stroke="#c6d7df" stroke-width="2"/><text x="372.0" y="259" class="label" text-anchor="middle">LAN A</text><path d="M322 307c28-42 74-42 100 0M343 320c18-25 42-25 60 0" fill="none" stroke="#2b6e96" stroke-width="6" stroke-linecap="round"/><text x="372.0" y="353" class="small" text-anchor="middle">Ethernet / Wi‑Fi</text><line x1="470" y1="300" x2="486" y2="300" stroke="#789aaa" stroke-width="3" marker-end="url(#arr)"/><rect x="488" y="225" width="196" height="150" rx="18" fill="#f6fafb" stroke="#c6d7df" stroke-width="2"/><text x="586.0" y="259" class="label" text-anchor="middle">Switch</text><rect x="536" y="279" width="100" height="44" rx="8" fill="#173a56"/><rect x="546" y="293" width="14" height="12" rx="2" fill="#d8eef2"/><rect x="570" y="293" width="14" height="12" rx="2" fill="#d8eef2"/><rect x="594" y="293" width="14" height="12" rx="2" fill="#d8eef2"/><rect x="618" y="293" width="14" height="12" rx="2" fill="#d8eef2"/><text x="586.0" y="353" class="small" text-anchor="middle">MAC forwarding</text><line x1="684" y1="300" x2="700" y2="300" stroke="#789aaa" stroke-width="3" marker-end="url(#arr)"/><rect x="702" y="225" width="196" height="150" rx="18" fill="#f6fafb" stroke="#c6d7df" stroke-width="2"/><text x="800.0" y="259" class="label" text-anchor="middle">Gateway</text><ellipse cx="800.0" cy="302" rx="46" ry="30" fill="#2b6e96"/><path d="M778.0 302h44M800.0 282v40" stroke="#fff" stroke-width="4"/><text x="800.0" y="353" class="small" text-anchor="middle">IP forwarding</text><line x1="898" y1="300" x2="914" y2="300" stroke="#789aaa" stroke-width="3" marker-end="url(#arr)"/><rect x="916" y="225" width="196" height="150" rx="18" fill="#f6fafb" stroke="#c6d7df" stroke-width="2"/><text x="1014.0" y="259" class="label" text-anchor="middle">Internet</text><path d="M964 316c-20-7-16-35 7-39 5-24 39-28 52-9 18-21 52-9 52 18 25 3 29 31 5 36z" fill="#e5eef2" stroke="#7f9ead" stroke-width="2"/><text x="1014.0" y="353" class="small" text-anchor="middle">routed networks</text><line x1="1112" y1="300" x2="1128" y2="300" stroke="#789aaa" stroke-width="3" marker-end="url(#arr)"/><rect x="1130" y="225" width="196" height="150" rx="18" fill="#f6fafb" stroke="#c6d7df" stroke-width="2"/><text x="1228.0" y="259" class="label" text-anchor="middle">Router</text><ellipse cx="1228.0" cy="302" rx="46" ry="30" fill="#2b6e96"/><path d="M1206.0 302h44M1228.0 282v40" stroke="#fff" stroke-width="4"/><text x="1228.0" y="353" class="small" text-anchor="middle">IP forwarding</text><line x1="1326" y1="300" x2="1342" y2="300" stroke="#789aaa" stroke-width="3" marker-end="url(#arr)"/><rect x="1344" y="225" width="196" height="150" rx="18" fill="#f6fafb" stroke="#c6d7df" stroke-width="2"/><text x="1442.0" y="259" class="label" text-anchor="middle">Server</text><rect x="1402" y="275" width="80" height="52" rx="8" fill="#dcebf0" stroke="#6f8fa0" stroke-width="2"/><text x="1442.0" y="353" class="small" text-anchor="middle">Web service</text><text x="64" y="430" class="section">Which layers are active at each device?</text><text x="64" y="458" class="small">Filled cells show the highest protocol responsibilities needed for this exchange.</text><rect x="64" y="500" width="1480" height="444" rx="16" fill="#fff" stroke="#c6d7df" stroke-width="2"/><rect x="64" y="500" width="180" height="74" fill="#edf5f7"/><text x="154.0" y="545" class="label" text-anchor="middle">Layer</text><rect x="244" y="500" width="260" height="74" fill="#edf5f7"/><text x="374.0" y="545" class="label" text-anchor="middle">Client</text><rect x="504" y="500" width="260" height="74" fill="#edf5f7"/><text x="634.0" y="545" class="label" text-anchor="middle">Switch</text><rect x="764" y="500" width="260" height="74" fill="#edf5f7"/><text x="894.0" y="545" class="label" text-anchor="middle">Gateway</text><rect x="1024" y="500" width="260" height="74" fill="#edf5f7"/><text x="1154.0" y="545" class="label" text-anchor="middle">Internet core</text><rect x="1284" y="500" width="260" height="74" fill="#edf5f7"/><text x="1414.0" y="545" class="label" text-anchor="middle">Server</text><line x1="64" y1="574" x2="1544" y2="574" stroke="#d8e3e8"/><text x="82" y="619" class="label">Application</text><line x1="244" y1="500" x2="244" y2="944" stroke="#d8e3e8"/><rect x="254" y="584" width="240" height="54" rx="9" fill="#173a56"/><text x="374.0" y="619" class="label white" text-anchor="middle">HTTP</text><line x1="504" y1="500" x2="504" y2="944" stroke="#d8e3e8"/><text x="634.0" y="619" class="small" text-anchor="middle">—</text><line x1="764" y1="500" x2="764" y2="944" stroke="#d8e3e8"/><text x="894.0" y="619" class="small" text-anchor="middle">—</text><line x1="1024" y1="500" x2="1024" y2="944" stroke="#d8e3e8"/><text x="1154.0" y="619" class="small" text-anchor="middle">—</text><line x1="1284" y1="500" x2="1284" y2="944" stroke="#d8e3e8"/><rect x="1294" y="584" width="240" height="54" rx="9" fill="#173a56"/><text x="1414.0" y="619" class="label white" text-anchor="middle">HTTP</text><line x1="64" y1="648" x2="1544" y2="648" stroke="#d8e3e8"/><text x="82" y="693" class="label">Transport</text><line x1="244" y1="500" x2="244" y2="944" stroke="#d8e3e8"/><rect x="254" y="658" width="240" height="54" rx="9" fill="#0f7f82"/><text x="374.0" y="693" class="label white" text-anchor="middle">TCP</text><line x1="504" y1="500" x2="504" y2="944" stroke="#d8e3e8"/><text x="634.0" y="693" class="small" text-anchor="middle">—</text><line x1="764" y1="500" x2="764" y2="944" stroke="#d8e3e8"/><text x="894.0" y="693" class="small" text-anchor="middle">—</text><line x1="1024" y1="500" x2="1024" y2="944" stroke="#d8e3e8"/><text x="1154.0" y="693" class="small" text-anchor="middle">—</text><line x1="1284" y1="500" x2="1284" y2="944" stroke="#d8e3e8"/><rect x="1294" y="658" width="240" height="54" rx="9" fill="#0f7f82"/><text x="1414.0" y="693" class="label white" text-anchor="middle">TCP</text><line x1="64" y1="722" x2="1544" y2="722" stroke="#d8e3e8"/><text x="82" y="767" class="label">Network</text><line x1="244" y1="500" x2="244" y2="944" stroke="#d8e3e8"/><rect x="254" y="732" width="240" height="54" rx="9" fill="#537d99"/><text x="374.0" y="767" class="label white" text-anchor="middle">IP</text><line x1="504" y1="500" x2="504" y2="944" stroke="#d8e3e8"/><text x="634.0" y="767" class="small" text-anchor="middle">—</text><line x1="764" y1="500" x2="764" y2="944" stroke="#d8e3e8"/><rect x="774" y="732" width="240" height="54" rx="9" fill="#537d99"/><text x="894.0" y="767" class="label white" text-anchor="middle">IP</text><line x1="1024" y1="500" x2="1024" y2="944" stroke="#d8e3e8"/><rect x="1034" y="732" width="240" height="54" rx="9" fill="#537d99"/><text x="1154.0" y="767" class="label white" text-anchor="middle">IP</text><line x1="1284" y1="500" x2="1284" y2="944" stroke="#d8e3e8"/><rect x="1294" y="732" width="240" height="54" rx="9" fill="#537d99"/><text x="1414.0" y="767" class="label white" text-anchor="middle">IP</text><line x1="64" y1="796" x2="1544" y2="796" stroke="#d8e3e8"/><text x="82" y="841" class="label">Link</text><line x1="244" y1="500" x2="244" y2="944" stroke="#d8e3e8"/><rect x="254" y="806" width="240" height="54" rx="9" fill="#dcebf0"/><text x="374.0" y="841" class="label" text-anchor="middle">frame</text><line x1="504" y1="500" x2="504" y2="944" stroke="#d8e3e8"/><rect x="514" y="806" width="240" height="54" rx="9" fill="#dcebf0"/><text x="634.0" y="841" class="label" text-anchor="middle">frame</text><line x1="764" y1="500" x2="764" y2="944" stroke="#d8e3e8"/><rect x="774" y="806" width="240" height="54" rx="9" fill="#dcebf0"/><text x="894.0" y="841" class="label" text-anchor="middle">frame</text><line x1="1024" y1="500" x2="1024" y2="944" stroke="#d8e3e8"/><rect x="1034" y="806" width="240" height="54" rx="9" fill="#dcebf0"/><text x="1154.0" y="841" class="label" text-anchor="middle">link frame</text><line x1="1284" y1="500" x2="1284" y2="944" stroke="#d8e3e8"/><rect x="1294" y="806" width="240" height="54" rx="9" fill="#dcebf0"/><text x="1414.0" y="841" class="label" text-anchor="middle">frame</text><line x1="64" y1="870" x2="1544" y2="870" stroke="#d8e3e8"/><text x="82" y="915" class="label">Physical</text><line x1="244" y1="500" x2="244" y2="944" stroke="#d8e3e8"/><rect x="254" y="880" width="240" height="54" rx="9" fill="#edf2f4"/><text x="374.0" y="915" class="label" text-anchor="middle">signal</text><line x1="504" y1="500" x2="504" y2="944" stroke="#d8e3e8"/><rect x="514" y="880" width="240" height="54" rx="9" fill="#edf2f4"/><text x="634.0" y="915" class="label" text-anchor="middle">signal</text><line x1="764" y1="500" x2="764" y2="944" stroke="#d8e3e8"/><rect x="774" y="880" width="240" height="54" rx="9" fill="#edf2f4"/><text x="894.0" y="915" class="label" text-anchor="middle">signal</text><line x1="1024" y1="500" x2="1024" y2="944" stroke="#d8e3e8"/><rect x="1034" y="880" width="240" height="54" rx="9" fill="#edf2f4"/><text x="1154.0" y="915" class="label" text-anchor="middle">signal</text><line x1="1284" y1="500" x2="1284" y2="944" stroke="#d8e3e8"/><rect x="1294" y="880" width="240" height="54" rx="9" fill="#edf2f4"/><text x="1414.0" y="915" class="label" text-anchor="middle">signal</text><rect x="64" y="950" width="1472" height="34" rx="10" fill="#e6f4f4" stroke="#b5d9d8" stroke-width="2"/><text x="800" y="973" class="body" text-anchor="middle">Encapsulation at endpoints: HTTP data → TCP segment → IP packet → local frame → signal.</text></svg>
+  text{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;fill:#183247}
+  .title{font-size:34px;font-weight:760}.subtitle{font-size:18px;fill:#587181}
+  .head{font-size:20px;font-weight:750}.body{font-size:16px}.small{font-size:14px;fill:#587181}
+  .cell{font-size:16px;font-weight:700}.white{fill:#fff}
+</style>
+<rect width="1600" height="940" fill="#fff"/>
+<text x="80" y="64" class="title">One web request crosses several kinds of network devices</text>
+<text x="80" y="98" class="subtitle">Endpoints run application and transport protocols; switches forward local frames; routers forward IP packets between networks.</text>
+
+<defs>
+  <marker id="teal" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#0f8b8d"/></marker>
+  <marker id="orange" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#d97824"/></marker>
+</defs>
+
+<!-- directional exchange -->
+<line x1="150" y1="145" x2="1450" y2="145" stroke="#0f8b8d" stroke-width="5" marker-end="url(#teal)"/>
+<text x="800" y="132" text-anchor="middle" class="head" fill="#0f8b8d">HTTP request →</text>
+<line x1="1450" y1="180" x2="150" y2="180" stroke="#d97824" stroke-width="4" stroke-dasharray="12 10" marker-end="url(#orange)"/>
+<text x="800" y="207" text-anchor="middle" class="body" fill="#b85d16">← HTTP response</text>
+
+<!-- device path on an exact grid -->
+<line x1="175" y1="350" x2="1425" y2="350" stroke="#7ea1b2" stroke-width="6" stroke-linecap="round"/>
+<g transform="translate(80,260)">
+  <rect width="190" height="145" rx="18" fill="#edf4f6" stroke="#9fb9c5" stroke-width="2"/>
+  <rect x="30" y="22" width="130" height="74" rx="8" fill="#bdd9e5" stroke="#365b72" stroke-width="3"/>
+  <rect x="55" y="40" width="80" height="40" rx="4" fill="#fff"/>
+  <text x="95" y="65" text-anchor="middle" class="small">browser</text>
+  <path d="M60 105h70l18 15H42z" fill="#456d84"/>
+  <text x="95" y="-16" text-anchor="middle" class="head">Client</text>
+</g>
+<g transform="translate(310,285)">
+  <rect width="170" height="105" rx="18" fill="#f3f7f9" stroke="#c6d7df" stroke-width="2"/>
+  <path d="M38 68c24-38 70-38 94 0M58 74c14-20 40-20 54 0" fill="none" stroke="#2781b6" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="85" cy="82" r="6" fill="#2781b6"/>
+  <text x="85" y="-16" text-anchor="middle" class="head">LAN A</text>
+  <text x="85" y="126" text-anchor="middle" class="small">Ethernet / Wi-Fi</text>
+</g>
+<g transform="translate(535,296)">
+  <rect width="170" height="82" rx="15" fill="#173a56"/>
+  <g fill="#d8eef2"><rect x="22" y="29" width="24" height="20" rx="3"/><rect x="56" y="29" width="24" height="20" rx="3"/><rect x="90" y="29" width="24" height="20" rx="3"/><rect x="124" y="29" width="24" height="20" rx="3"/></g>
+  <text x="85" y="-16" text-anchor="middle" class="head">Switch</text>
+  <text x="85" y="106" text-anchor="middle" class="small">MAC forwarding</text>
+</g>
+<g transform="translate(765,292)">
+  <ellipse cx="78" cy="40" rx="78" ry="40" fill="#176e9b"/>
+  <path d="M36 40h84M78 12v56M50 26 36 40l14 14M106 26l14 14-14 14" fill="none" stroke="#fff" stroke-width="6"/>
+  <text x="78" y="-16" text-anchor="middle" class="head">Gateway</text>
+  <text x="78" y="102" text-anchor="middle" class="small">IP next hop</text>
+</g>
+<g transform="translate(970,278)">
+  <path d="M25 98c-25-8-26-42 4-52 5-28 40-39 62-20 21-23 61-7 61 25 32 4 36 41 8 47z" fill="#e7f1f5" stroke="#7f9ead" stroke-width="3"/>
+  <text x="90" y="68" text-anchor="middle" class="head">Internet</text>
+  <text x="90" y="-12" text-anchor="middle" class="head">Routed core</text>
+  <text x="90" y="122" text-anchor="middle" class="small">many independent links</text>
+</g>
+<g transform="translate(1190,292)">
+  <ellipse cx="78" cy="40" rx="78" ry="40" fill="#176e9b"/>
+  <path d="M36 40h84M78 12v56M50 26 36 40l14 14M106 26l14 14-14 14" fill="none" stroke="#fff" stroke-width="6"/>
+  <text x="78" y="-16" text-anchor="middle" class="head">Router</text>
+  <text x="78" y="102" text-anchor="middle" class="small">IP forwarding</text>
+</g>
+<g transform="translate(1370,260)">
+  <rect width="145" height="145" rx="16" fill="#173a56"/>
+  <g stroke="#87a8b7" stroke-width="3"><line x1="25" y1="43" x2="105" y2="43"/><line x1="25" y1="76" x2="105" y2="76"/><line x1="25" y1="109" x2="105" y2="109"/></g>
+  <g fill="#78c9bd"><circle cx="120" cy="43" r="6"/><circle cx="120" cy="76" r="6"/><circle cx="120" cy="109" r="6"/></g>
+  <text x="72" y="-16" text-anchor="middle" class="head">Server</text>
+</g>
+
+<!-- layer matrix -->
+<text x="80" y="500" class="title">Which layers matter at each device?</text>
+<text x="80" y="532" class="subtitle">The same data is encapsulated differently as it moves, but each device only needs the layers required for its job.</text>
+
+<g transform="translate(80,575)">
+  <!-- table frame -->
+  <rect width="1440" height="280" rx="16" fill="#fff" stroke="#c9d9df" stroke-width="2"/>
+  <!-- verticals -->
+  <line x1="210" y1="0" x2="210" y2="280" stroke="#c9d9df"/>
+  <line x1="456" y1="0" x2="456" y2="280" stroke="#c9d9df"/>
+  <line x1="702" y1="0" x2="702" y2="280" stroke="#c9d9df"/>
+  <line x1="948" y1="0" x2="948" y2="280" stroke="#c9d9df"/>
+  <line x1="1194" y1="0" x2="1194" y2="280" stroke="#c9d9df"/>
+  <!-- horizontals -->
+  <line x1="0" y1="55" x2="1440" y2="55" stroke="#c9d9df"/>
+  <line x1="0" y1="100" x2="1440" y2="100" stroke="#e0e9ed"/>
+  <line x1="0" y1="145" x2="1440" y2="145" stroke="#e0e9ed"/>
+  <line x1="0" y1="190" x2="1440" y2="190" stroke="#e0e9ed"/>
+  <line x1="0" y1="235" x2="1440" y2="235" stroke="#e0e9ed"/>
+
+  <rect x="0" y="0" width="1440" height="55" rx="16" fill="#f2f7f8"/>
+  <text x="105" y="35" text-anchor="middle" class="head">Layer</text>
+  <text x="333" y="35" text-anchor="middle" class="head">Client</text>
+  <text x="579" y="35" text-anchor="middle" class="head">Switch</text>
+  <text x="825" y="35" text-anchor="middle" class="head">Router</text>
+  <text x="1071" y="35" text-anchor="middle" class="head">Internet link</text>
+  <text x="1317" y="35" text-anchor="middle" class="head">Server</text>
+
+  <text x="25" y="84" class="body">Application</text>
+  <text x="25" y="129" class="body">Transport</text>
+  <text x="25" y="174" class="body">Network</text>
+  <text x="25" y="219" class="body">Link</text>
+  <text x="25" y="264" class="body">Physical</text>
+
+  <rect x="230" y="65" width="206" height="26" rx="8" fill="#173a56"/><text x="333" y="83" text-anchor="middle" class="cell white">HTTP</text>
+  <rect x="230" y="110" width="206" height="26" rx="8" fill="#0f8b8d"/><text x="333" y="128" text-anchor="middle" class="cell white">TCP</text>
+  <rect x="230" y="155" width="206" height="26" rx="8" fill="#537d99"/><text x="333" y="173" text-anchor="middle" class="cell white">IP</text>
+  <rect x="230" y="200" width="206" height="26" rx="8" fill="#d6e6ed"/><text x="333" y="218" text-anchor="middle" class="cell">frame</text>
+  <rect x="230" y="245" width="206" height="26" rx="8" fill="#edf2f4"/><text x="333" y="263" text-anchor="middle" class="cell">signals</text>
+
+  <text x="579" y="84" text-anchor="middle" class="small">—</text><text x="579" y="129" text-anchor="middle" class="small">—</text><text x="579" y="174" text-anchor="middle" class="small">—</text>
+  <rect x="476" y="200" width="206" height="26" rx="8" fill="#d6e6ed"/><text x="579" y="218" text-anchor="middle" class="cell">Ethernet frame</text>
+  <rect x="476" y="245" width="206" height="26" rx="8" fill="#edf2f4"/><text x="579" y="263" text-anchor="middle" class="cell">signals</text>
+
+  <text x="825" y="84" text-anchor="middle" class="small">—</text><text x="825" y="129" text-anchor="middle" class="small">—</text>
+  <rect x="722" y="155" width="206" height="26" rx="8" fill="#537d99"/><text x="825" y="173" text-anchor="middle" class="cell white">IP packet</text>
+  <rect x="722" y="200" width="206" height="26" rx="8" fill="#d6e6ed"/><text x="825" y="218" text-anchor="middle" class="cell">new link frame</text>
+  <rect x="722" y="245" width="206" height="26" rx="8" fill="#edf2f4"/><text x="825" y="263" text-anchor="middle" class="cell">signals</text>
+
+  <text x="1071" y="84" text-anchor="middle" class="small">—</text><text x="1071" y="129" text-anchor="middle" class="small">—</text>
+  <rect x="968" y="155" width="206" height="26" rx="8" fill="#537d99"/><text x="1071" y="173" text-anchor="middle" class="cell white">IP packet</text>
+  <rect x="968" y="200" width="206" height="26" rx="8" fill="#d6e6ed"/><text x="1071" y="218" text-anchor="middle" class="cell">link-specific frame</text>
+  <rect x="968" y="245" width="206" height="26" rx="8" fill="#edf2f4"/><text x="1071" y="263" text-anchor="middle" class="cell">signals</text>
+
+  <rect x="1214" y="65" width="206" height="26" rx="8" fill="#173a56"/><text x="1317" y="83" text-anchor="middle" class="cell white">HTTP</text>
+  <rect x="1214" y="110" width="206" height="26" rx="8" fill="#0f8b8d"/><text x="1317" y="128" text-anchor="middle" class="cell white">TCP</text>
+  <rect x="1214" y="155" width="206" height="26" rx="8" fill="#537d99"/><text x="1317" y="173" text-anchor="middle" class="cell white">IP</text>
+  <rect x="1214" y="200" width="206" height="26" rx="8" fill="#d6e6ed"/><text x="1317" y="218" text-anchor="middle" class="cell">frame</text>
+  <rect x="1214" y="245" width="206" height="26" rx="8" fill="#edf2f4"/><text x="1317" y="263" text-anchor="middle" class="cell">signals</text>
+</g>
+
+<rect x="80" y="880" width="1440" height="40" rx="12" fill="#e8f5f6"/>
+<text x="800" y="906" text-anchor="middle" class="body"><tspan font-weight="750">Encapsulation:</tspan> HTTP data → TCP segment → IP packet → local frame → physical signal.</text>
+</svg>
